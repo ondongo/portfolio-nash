@@ -14,4 +14,40 @@ body {
   body {
     @apply font-primary bg-slate-950 text-white leading-loose;
   }
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+
+  .h2 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .remplissage {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    color: #fff;
+  }
+  .remplissage::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: #020617;
+    border-radius: 50% 50% 0% 0%;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .remplissage:hover::before {
+    top: 0px;
+    border-radius: 0;
+    color: #020617;
+  }
+  
 }

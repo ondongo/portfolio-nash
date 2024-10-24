@@ -39,14 +39,14 @@ function MobileNav() {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}{" "}
-        <div className="mt-32 mb-40 text-center text-2xl">
+        <div className="mt-32 mb-20 text-center text-2xl">
           <Link href={""}>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
             Developer<span className="text-green-300"> &lt; 👨🏾‍💻 &gt; </span>  
             </h1>
           </Link>
         </div>
-        <nav className="flex gap-8">
+        <nav className="flex flex-col items-center justify-center gap-8 ">
           {links.map((link, index) => {
             return (
               <Link
