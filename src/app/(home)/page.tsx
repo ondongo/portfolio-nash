@@ -1,3 +1,4 @@
+"use client";
 import { CardStack } from "@/components/CardStack";
 import Header from "@/components/Header";
 import { MacbookScrollDemo } from "@/components/MacbookScrollDemo";
@@ -5,6 +6,7 @@ import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 import { FiDownload } from "react-icons/fi";
 
 /* const cards = [
@@ -46,6 +48,18 @@ import { FiDownload } from "react-icons/fi";
  */
 
 export default function Home() {
+  const router = useRouter();
+  const handleDownload = () => {
+    /*  const link = document.createElement("a");
+    link.href = "/CvGloireAlternantProfil.pdf";
+    link.download = "CvGloireAlternantProfil.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); */
+    router.push("/CvGloireAlternantProfil.pdf");
+    /*   window.open('/CvGloireAlternantProfil.pdf', '_blank'); */
+  };
+
   return (
     <section className="h'full">
       <div className="container mx-auto h-full">
@@ -68,6 +82,7 @@ export default function Home() {
               <Button
                 variant={"outline"}
                 size={"lg"}
+                onClick={handleDownload}
                 className="uppercase flex items-center gap-2 remplissage"
               >
                 <span> Mon Cv </span>
@@ -90,8 +105,8 @@ export default function Home() {
       </div>
 
       <Stats />
-     
-     {/*  <CardStack items={cards} offset={20} scaleFactor={0.08} /> */}
+
+      {/*  <CardStack items={cards} offset={20} scaleFactor={0.08} /> */}
     </section>
   );
 }
