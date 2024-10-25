@@ -19,7 +19,7 @@ export function MacbookScrollDemo() {
         <MacbookScroll
           title={
             <span>
-              Faites défiler pour voir un aperçu de l'ancien site en <br />
+              Faites défiler pour voir un aperçu de l&apos;ancien site en <br />
               Glassmorphism, ou cliquez ici pour y accéder directement.
             </span>
           }

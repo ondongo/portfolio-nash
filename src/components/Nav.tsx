@@ -15,8 +15,14 @@ function Nav() {
     },
 
     {
-      name: "résumé",
+      name: "parcours",
       path: "/about",
+    },
+
+
+    {
+      name: "résumé",
+      path: "/aboutUs",
     },
     {
       name: "projets",
