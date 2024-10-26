@@ -18,8 +18,8 @@ function Nav() {
     },
 
     {
-      name: "résumé",
-      path: "/aboutUs",
+      name: "skills",
+      path: "/skills",
     },
     {
       name: "projets",

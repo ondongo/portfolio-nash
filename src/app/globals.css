@@ -7,7 +7,6 @@ body {
 }
 
 @layer base {
-
   :root {
     --radius: 0.5rem;
   }
@@ -53,5 +52,14 @@ body {
     top: 0;
     border-radius: 0;
     color: #020617;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #87eeab;
+    cursor: pointer;
   }
 }
