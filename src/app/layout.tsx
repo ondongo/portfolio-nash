@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Prince de Gloire ONDONGO - Portfolio",
     description:
       "Discover my work as a full stack developer. Find out more about my projects and expertise in web development.",
-    images: ["/apercu.png"], 
+    images: ["/assets/apercu.png"], 
     type: "website",
   },
 };
