@@ -6,6 +6,8 @@ import { Button } from "./ui/button";
 import MobileNav from "./MobileNav";
 
 function Header() {
+
+ 
   return (
     <header className="py-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center">
@@ -18,7 +20,7 @@ function Header() {
         {/* Desktop nav  */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href={"/contact"}>
+          <Link href={"https://calendly.com/gloireondongo1205/prise-de-contact"}>
             <Button className="remplissage" >Engagez moi</Button>
           </Link>
         </div>
