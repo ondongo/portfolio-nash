@@ -5,36 +5,42 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
-      title: "2020 - 2023",
+      title: "Actuellement ",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <h2 className="text-xl font-bold mb-4">
+            Développeur Full Stack (Bac+4) - MydigitalSchool Rennes
+          </h2>
+          <p className="text-neutral-400 text-sm  font-normal mb-8">
+            En formation, j&apos;affine mes compétences en développement full
+            stack, créant des applications performantes et innovantes. Je
+            travaille sur des projets réels, garantissant des solutions robustes
+            et adaptées aux besoins des clients.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="/assets/mydigitalschool1.png"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/templates/startup-2.webp"
+              src="/assets/mydigitalschool2.jpg"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/templates/startup-3.webp"
+              src="/assets/mydigitalschool3.jpg"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/templates/startup-4.webp"
+              src="/assets/mydigitalschool4.png"
               alt="startup template"
               width={500}
               height={500}
@@ -45,41 +51,53 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Mi 2023",
+      title: "2023 - 2024 ",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          <h2 className="text-xl font-bold mb-4">
+            Développeur Full Stack - Dysoft Consulting
+          </h2>
+          <p className="text-neutral-400  text-sm  font-normal mb-8">
+            En tant que Développeur Full Stack chez Dysoft Consulting pendant
+            plus d&apos;un an, j&apos;ai eu l&apos;opportunité de créer des
+            expériences numériques innovantes et engageantes. Mon rôle m&apos;a
+            permis de contribuer au développement d&apos;applications e-commerce
+            multi-vendeurs et de Progressive Web Apps, intégrant des solutions
+            de paiement tout en veillant à offrir des parcours utilisateur
+            optimisés. également collaboré à des projets variés, tels
+            qu&apos;une application de prise de rendez-vous et une plateforme de
+            mise en relation entre marques et prestataires de services. Grâce à
+            la refonte de plusieurs sites, j&apos;ai enrichi l&apos;expérience
+            visuelle avec des animations dynamiques, tout en rédigeant une
+            documentation technique pour garantir la compréhension et la
+            maintenance des projets.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
-          </p>
+
+        
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="/assets/dysoft1.png"
               alt="hero template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/features-section.png"
+              src="/assets/dysoft2.png"
               alt="feature template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+              src="/assets/dysoft3.png"
               alt="bento template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/cards.png"
+              src="/assets/dysoft5.png"
               alt="cards template"
               width={500}
               height={500}
@@ -90,53 +108,48 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "2023 - 2024",
+      title: "Mi 2022",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+          <h2 className="text-xl font-bold mb-4">
+            Assistant Web (Stage de 6 mois) - Monark Group
+          </h2>
+          <p className="text-neutral-400  text-sm  font-normal mb-8">
+            Durant mon stage de six mois chez Monark Group, j&apos;ai joué un
+            rôle clé en assistant au développement de sites WordPress, incluant
+            des vitrines, des e-commerces et des intranets. J&apos;ai contribué
+            à la création de landing pages dynamiques, intégrant des animations
+            interactives pour améliorer l&apos;expérience utilisateur. Mon
+            implication dans le développement des fonctionnalités d&apos;une
+            application web de transactions m&apos;a permis d&apos;acquérir une
+            expérience précieuse, tout en veillant à la clarté des projets grâce
+            à la rédaction de spécifications techniques précises.
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div>
+         
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="/assets/monark1.jpg"
               alt="hero template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/features-section.png"
+              src="/assets/monark2.gif"
               alt="feature template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+              src="/assets/monark3.png"
               alt="bento template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="https://assets.aceternity.com/cards.png"
+              src="/assets/monark4.jpg"
               alt="cards template"
               width={500}
               height={500}
@@ -148,62 +161,51 @@ export function TimelineDemo() {
     },
 
     {
-        title: "Mi 2024",
-        content: (
-          <div>
-            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-              Deployed 5 new components on Aceternity today
-            </p>
-            <div className="mb-8">
-              <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                ✅ Card grid component
-              </div>
-              <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                ✅ Startup template Aceternity
-              </div>
-              <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                ✅ Random file upload lol
-              </div>
-              <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                ✅ Himesh Reshammiya Music CD
-              </div>
-              <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                ✅ Salman Bhai Fan Club registrations open
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <Image
-                src="https://assets.aceternity.com/pro/hero-sections.png"
-                alt="hero template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
-              <Image
-                src="https://assets.aceternity.com/features-section.png"
-                alt="feature template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
-              <Image
-                src="https://assets.aceternity.com/pro/bento-grids.png"
-                alt="bento template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
-              <Image
-                src="https://assets.aceternity.com/cards.png"
-                alt="cards template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
-            </div>
+      title: "2020 - 2023",
+      content: (
+        <div>
+          <h2 className="text-xl font-bold mb-4">
+            Licence en Génie Logiciel & Réseaux - ISM Digital Campus
+          </h2>
+          <p className="text-neutral-400  text-sm  font-normal mb-8">
+            Cette formation m&apos;a permis de maîtriser les bases du
+            développement web et mobile, de la gestion de projets et des
+            réseaux, ouvrant la voie à une expertise technique polyvalente
+            orientée vers des solutions innovantes.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/assets/ism1.jpg"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/ism2.jpg"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/ism3.jpg"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/ism4.jpeg"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
           </div>
-        ),
-      },
+        </div>
+      ),
+    },
   ];
   return (
     <div className="w-full">

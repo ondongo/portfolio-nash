@@ -5,20 +5,17 @@ import Link from "next/link";
 function Nav() {
   const links = [
     {
-      name: "home",
+      name: "Acceuil",
       path: "/",
     },
-
-    {
-      name: "services",
-      path: "/services",
-    },
-
     {
       name: "parcours",
       path: "/about",
     },
-
+    {
+      name: "services",
+      path: "/services",
+    },
 
     {
       name: "résumé",
