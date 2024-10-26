@@ -1,7 +1,4 @@
 "use client";
-import { CardStack } from "@/components/CardStack";
-import Header from "@/components/Header";
-import { MacbookScrollDemo } from "@/components/MacbookScrollDemo";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
