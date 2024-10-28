@@ -44,7 +44,7 @@ function MobileNav() {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}{" "}
-        <div className="mt-24 mb-16 md:mb-20 text-center text-2xl">
+        <div className="mt-24 mb-12 md:mb-20 text-center text-2xl">
           <Link href={""}>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
               Developer<span className="text-green-300"> &lt; 👨🏾‍💻 &gt; </span>
