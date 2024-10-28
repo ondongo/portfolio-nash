@@ -18,7 +18,7 @@ const stats = [
     text: "Projets completés",
   },
   {
-    num: 15,
+    num: 54,
     text: "Technologies ",
   },
 ];

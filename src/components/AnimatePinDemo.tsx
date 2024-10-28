@@ -1,26 +1,39 @@
 "use client";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
+import { motion } from "framer-motion";
 
-export function AnimatedPinDemo() {
+export function AnimatedPinDemo({
+  title,
+  desc,
+  icon,
+}: {
+  title: string;
+  desc: string;
+  icon: React.ReactNode;
+}) {
   return (
-    <div className="flex items-center justify-center w-[18rem] h-[20rem] ">
-      <PinContainer
-        title="/ui.aceternity.com"
-        href="https://twitter.com/mannupaaji"
-      >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[16rem] h-[18rem] ">
-          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-            Aceternity UI
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 0.5, duration: 0.3, ease: "easeInOut" },
+      }}
+      className="flex items-center justify-center w-auto h-auto z-20 "
+    >
+      <PinContainer title={title} href="/">
+        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[14rem] h-[18rem]">
+          <h3 className="max-w-xs pb-2 m-0 font-bold text-base text-slate-100">
+            {title}
           </h3>
-          <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">
-              Customizable Tailwind CSS and Framer Motion Components.
-            </span>
+          <div className="text-base m-0 p-0 font-normal">
+            <span className="text-slate-500 ">{desc}</span>
           </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+          <div className="flex flex-1 w-full items-center justify-center rounded-lg mt-4 bg-gradient-to-br from-green-300 via-green-500 to-green-700 p-6">
+            <div className="text-5xl text-white">{icon}</div>
+          </div>
         </div>
       </PinContainer>
-    </div>
+    </motion.div>
   );
 }

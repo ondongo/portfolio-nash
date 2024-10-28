@@ -40,14 +40,7 @@ export const CardStack = ({
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 1, duration: 0.4, ease: "easeIn" },
-      }}
-      className="relative  h-60 w-60 md:h-60 md:w-[500px]"
-    >
+    <div className="relative  h-60 w-60 md:h-60 md:w-[500px]">
       {cards.map((card, index) => {
         return (
           <motion.div
@@ -62,9 +55,7 @@ export const CardStack = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <div className="font-normal text-white ">
-              {card.content}
-            </div>
+            <div className="font-normal text-white ">{card.content}</div>
             <div>
               <p className="text-neutral-500 font-medium dark:text-white">
                 {card.name}
@@ -76,6 +67,6 @@ export const CardStack = ({
           </motion.div>
         );
       })}
-    </motion.div>
+    </div>
   );
 };
