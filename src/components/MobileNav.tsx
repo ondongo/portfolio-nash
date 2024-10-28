@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CiMenuFries } from "react-icons/ci";
+import { Button } from "./ui/button";
 
 const links = [
   {
@@ -43,10 +44,10 @@ function MobileNav() {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}{" "}
-        <div className="mt-32 mb-20 text-center text-2xl">
+        <div className="mt-24 mb-20 text-center text-2xl">
           <Link href={""}>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
-            Developer<span className="text-green-300"> &lt; 👨🏾‍💻 &gt; </span>  
+              Developer<span className="text-green-300"> &lt; 👨🏾‍💻 &gt; </span>
             </h1>
           </Link>
         </div>
@@ -65,6 +66,12 @@ function MobileNav() {
               </Link>
             );
           })}
+
+          <Link
+            href={"https://calendly.com/gloireondongo1205/prise-de-contact"}
+          >
+            <Button className="remplissage">Engagez moi</Button>
+          </Link>
         </nav>
       </SheetContent>
     </Sheet>

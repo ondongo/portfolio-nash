@@ -37,7 +37,7 @@ const services = [
         designation: "Développement Frontend",
         content: (
           <p>
-            Avec <Highlight>React</Highlight>, je développe des interfaces dynamiques qui améliorent l'expérience utilisateur et garantissent une maintenance facile.
+            Avec <Highlight>React</Highlight>, je développe des interfaces dynamiques qui améliorent l&apos;expérience utilisateur et garantissent une maintenance facile.
           </p>
         ),
       },
@@ -47,7 +47,7 @@ const services = [
         designation: "Développement Full Stack",
         content: (
           <p>
-            Grâce à <Highlight>Next.js</Highlight>, j'intègre des optimisations SEO et un rendu côté serveur pour des performances élevées.
+            Grâce à <Highlight>Next.js</Highlight>, j&apos;intègre des optimisations SEO et un rendu côté serveur pour des performances élevées.
           </p>
         ),
       },
@@ -85,7 +85,7 @@ const services = [
         designation: "Développement Mobile",
         content: (
           <p>
-            J'utilise <Highlight>WordPress</Highlight> pour développer des sites flexibles, adaptés à vos besoins, que ce soit un blog ou une plateforme e-commerce.
+            J&apos;utilise <Highlight>WordPress</Highlight> pour développer des sites flexibles, adaptés à vos besoins, que ce soit un blog ou une plateforme e-commerce.
           </p>
         ),
       },
