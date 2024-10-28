@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairEffect from "@/components/animation/stairs/StairEffect";
-
+import { Analytics } from "@vercel/analytics/react";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -13,7 +13,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://princedegloire.fr"), 
+  metadataBase: new URL("https://princedegloire.fr"),
   title: "Prince de Gloire ONDONGO - Full Stack Developer",
   description:
     "Welcome to my portfolio! Explore my projects, skills, and experiences as a full stack developer specializing in web and mobile applications.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Prince de Gloire ONDONGO - Portfolio",
     description:
       "Discover my work as a full stack developer. Find out more about my projects and expertise in web development.",
-    images: ["https://princedegloire.fr/assets/apercu.png"], 
+    images: ["https://princedegloire.fr/assets/apercu.png"],
     type: "website",
   },
 };
@@ -36,6 +36,7 @@ export default function RootLayout({
         <Header />
         <StairEffect />
         <PageTransition>{children}</PageTransition>
+        <Analytics />
       </body>
     </html>
   );
