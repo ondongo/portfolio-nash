@@ -27,43 +27,37 @@ const Highlight = ({
 const services = [
   {
     num: "01",
-    title: "Web / Mobile Dev",
+    title: "Web / Mobile",
     href: "",
-    description: "Create stunning and responsive websites.",
+    description: "Je crée des sites web modernes et responsives, adaptés aux besoins de mes utilisateurs.",
     subServices: [
       {
         id: 1,
-        name: "React Development",
-        designation: "Frontend Development",
-
+        name: "Développement React",
+        designation: "Développement Frontend",
         content: (
           <p>
-            These cards are amazing, &nbsp;{" "}
-            <Highlight>I want to use them</Highlight> &nbsp; in my project.
-            Framer motion is a godsend ngl tbh fam 🙏
+            Avec <Highlight>React</Highlight>, je développe des interfaces dynamiques qui améliorent l'expérience utilisateur et garantissent une maintenance facile.
           </p>
         ),
       },
       {
         id: 2,
-        name: "Next.js Development",
-        designation: "Full Stack Development",
+        name: "Développement Next.js",
+        designation: "Développement Full Stack",
         content: (
           <p>
-            These cards are amazing, <Highlight>I want to use them</Highlight>{" "}
-            in my project. Framer motion is a godsend ngl tbh fam 🙏
+            Grâce à <Highlight>Next.js</Highlight>, j'intègre des optimisations SEO et un rendu côté serveur pour des performances élevées.
           </p>
         ),
       },
-
       {
         id: 3,
-        name: "Next.js Development",
-        designation: "Full Stack Development",
+        name: "Développement d'applications web",
+        designation: "Développement Full Stack",
         content: (
           <p>
-            These cards are amazing, <Highlight>I want to use them</Highlight>{" "}
-            in my project. Framer motion is a godsend ngl tbh fam 🙏
+            Je conçois des applications sur mesure, offrant une expérience utilisateur fluide et transformant vos idées en solutions. <Highlight>Mon objectif</Highlight> est votre satisfaction.
           </p>
         ),
       },
@@ -73,32 +67,44 @@ const services = [
     num: "02",
     title: "Nocode / Lowcode",
     href: "",
-    description: "Build mobile applications for iOS and Android.",
+    description: "Je développe rapidement des applications mobiles pour iOS et Android sans code complexe.",
     subServices: [
       {
         id: 4,
-        name: "FlutterFlow Development",
-        designation: "Cross-platform Development",
-        content: "Create native-like mobile apps using Flutter.",
+        name: "Développement FlutterFlow",
+        designation: "Développement Cross-platform",
+        content: (
+          <p>
+            Avec <Highlight>FlutterFlow</Highlight>, je crée des applications mobiles élégantes et performantes, tout en réduisant les délais de livraison.
+          </p>
+        ),
       },
       {
         id: 5,
-        name: "Wordpress Development",
-        designation: "Mobile Development",
-        content: "Develop cross-platform apps with React Native.",
+        name: "Développement WordPress",
+        designation: "Développement Mobile",
+        content: (
+          <p>
+            J'utilise <Highlight>WordPress</Highlight> pour développer des sites flexibles, adaptés à vos besoins, que ce soit un blog ou une plateforme e-commerce.
+          </p>
+        ),
       },
-
       {
         id: 6,
-        name: "Bubble Development",
-        designation: "Mobile Development",
-        content: "Develop cross-platform apps with React Native.",
+        name: "Développement Bubble",
+        designation: "Développement Mobile",
+        content: (
+          <p>
+            Avec <Highlight>Bubble</Highlight>, je construis des applications web sans code, offrant flexibilité et innovation tout en maîtrisant les coûts.
+          </p>
+        ),
       },
     ],
   },
 
   // Ajoutez plus de services et sous-services ici
 ];
+
 
 function Services() {
   return (
