@@ -53,7 +53,7 @@ export default function Home() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link); */
-    router.push("/CvGloire.pdf");
+    router.push("/CvGloireAlternance.pdf");
     /*   window.open('/CvGloireAlternantProfil.pdf', '_blank'); */
   };
 
