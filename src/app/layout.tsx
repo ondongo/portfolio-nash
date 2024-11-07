@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   title: "Prince de Gloire ONDONGO - Full Stack Developer",
   description:
     "Welcome to my portfolio! Explore my projects, skills, and experiences as a full stack developer specializing in web and mobile applications.",
+  keywords: [
+    "Prince de Gloire ONDONGO",
+    "Full Stack Developer",
+    "Web Development",
+    "Portfolio",
+    "React",
+    "Next.js",
+  ],
   openGraph: {
     title: "Prince de Gloire ONDONGO - Portfolio",
     description:
@@ -25,6 +33,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,6 +46,11 @@ export default function RootLayout({
         <StairEffect />
         <PageTransition>{children}</PageTransition>
         <Analytics />
+        <script
+          defer
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6591466028014726"
+          crossOrigin="anonymous"
+        ></script>
       </body>
     </html>
   );
