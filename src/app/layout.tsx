@@ -41,6 +41,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="ca-pub-6591466028014726"
+        />
+      </head>
       <body className={`${jetBrainsMono.variable}  `}>
         <Header />
         <StairEffect />
