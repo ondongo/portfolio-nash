@@ -9,7 +9,7 @@ const isMobile = () => {
 const socials = [
   {
     icon: <FaGithub />,
-    path: "https://github.com/ondongo",
+    path: "https://github.com/princedegloireODG",
   },
   {
     icon: <FaLinkedinIn />,
