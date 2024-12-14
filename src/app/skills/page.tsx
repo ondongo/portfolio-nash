@@ -34,6 +34,7 @@ import {
   FaFilePowerpoint,
   FaFileWord,
   FaMoneyBillWaveAlt,
+  FaMousePointer
 } from "react-icons/fa";
 import {
   SiChakraui,
@@ -67,6 +68,11 @@ import {
   Si99Designs,
   SiCanva,
   SiFigma,
+  SiDocker,
+  SiGithub,
+  SiPostman,
+  SiJsonwebtokens,
+  SiGraphql,
 } from "react-icons/si";
 
 const skills = {
@@ -240,20 +246,52 @@ const skills = {
   ],
   tools: [
     {
-      title: "VSCode",
-      desc: "Éditeur de code.",
-      icon: <SiVisualstudiocode />,
-    },
-    {
-      title: "Vercel",
-      desc: "Plateforme de déploiement pour les projets front-end.",
-      icon: <SiVercel />,
+      title: "Docker",
+      desc: "Plateforme de conteneurisation pour déployer des applications.",
+      icon: <SiDocker />,
     },
     {
       title: "Git",
       desc: "Système de gestion de versions distribué.",
       icon: <SiGit />,
     },
+    {
+      title: "GitHub",
+      desc: "Plateforme d'hébergement et de collaboration pour le code.",
+      icon: <SiGithub />,
+    },
+    {
+      title: "Postman",
+      desc: "Outil de test d'API REST et GraphQL.",
+      icon: <SiPostman />,
+    },
+    {
+      title: "REST API",
+      desc: "Interface pour les échanges entre applications.",
+      icon: <SiJsonwebtokens />,
+    },
+    {
+      title: "GraphQL",
+      desc: "Langage de requêtes pour les API.",
+      icon: <SiGraphql />,
+    },
+    {
+      title: "VSCode",
+      desc: "Éditeur de code léger et extensible.",
+      icon: <SiVisualstudiocode />,
+    },
+    {
+      title: "Cursor",
+      desc: "Outil d'assistance au développement par IA.",
+      icon: <FaMousePointer />,
+    },
+    
+    {
+      title: "Vercel",
+      desc: "Plateforme de déploiement pour les projets front-end.",
+      icon: <SiVercel />,
+    },
+    
     {
       title: "Jira",
       desc: "Outil de gestion de projets agile.",
@@ -275,6 +313,16 @@ const skills = {
       title: "API REST",
       desc: "Principes de conception d'API RESTful.",
       icon: <FaServer />,
+    },
+    {
+      title: "REST FULL API",
+      desc: "Interface pour les échanges entre applications.",
+      icon: <SiJsonwebtokens />,
+    },
+    {
+      title: "GraphQL",
+      desc: "Langage de requêtes pour les API.",
+      icon: <SiGraphql />,
     },
     {
       title: "Autres Intégrations",
