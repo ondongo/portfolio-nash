@@ -73,6 +73,13 @@ import {
   SiPostman,
   SiJsonwebtokens,
   SiGraphql,
+  SiExpress,
+  SiDjango,
+  SiFlask,
+  SiHibernate,
+  SiSequelize,
+  SiPrisma,
+  SiPython,
 } from "react-icons/si";
 
 const skills = {
@@ -140,6 +147,11 @@ const skills = {
       icon: <FaNodeJs />,
     },
     {
+      title: "Express",
+      desc: "Framework web minimaliste pour Node.js.",
+      icon: <SiExpress />,
+    },
+    {
       title: "Firebase",
       desc: "Plateforme de développement mobile et web offrant des services de backend.",
       icon: <SiFirebase />,
@@ -162,7 +174,12 @@ const skills = {
     {
       title: "Flask",
       desc: "Framework micro pour des applications web en Python.",
-      icon: <FaPython />,
+      icon: <SiFlask />,
+    },
+    {
+      title: "Django",
+      desc: "Framework web complet pour des applications Python robustes.",
+      icon: <SiDjango />,
     },
     {
       title: "Java",
@@ -244,6 +261,39 @@ const skills = {
       icon: <SiAirtable />,
     },
   ],
+  orm: [
+    {
+      title: "Sequelize",
+      desc: "ORM pour Node.js supportant divers SGBD relationnels comme MySQL et PostgreSQL.",
+      icon: <SiSequelize />,
+    },
+    {
+      title: "Prisma",
+      desc: "ORM moderne et performant pour Node.js avec un typage fort.",
+      icon: <SiPrisma />,
+    },
+    {
+      title: "Hibernate",
+      desc: "ORM pour Java avec support avancé des bases de données relationnelles.",
+      icon: <SiHibernate />,
+    },
+    {
+      title: "Django ORM",
+      desc: "ORM intégré au framework Django pour travailler avec des bases de données relationnelles.",
+      icon: <SiDjango />,
+    },
+    {
+      title: "SQLAlchemy",
+      desc: "ORM pour Python utilisé avec Flask pour la gestion des bases de données relationnelles.",
+      icon: <SiPython />,
+    },
+    {
+      title: "Doctrine ORM",
+      desc: "ORM pour PHP intégré au framework Symfony, permettant la gestion des entités et des bases de données.",
+      icon: <FaPhp />,
+    },
+  ],
+  
   tools: [
     {
       title: "Docker",
@@ -441,6 +491,7 @@ function page() {
             <TabsTrigger value="backend">Backend</TabsTrigger>
             <TabsTrigger value="mobileNoCode">Mobile/No-Code</TabsTrigger>
             <TabsTrigger value="database">Base de données</TabsTrigger>
+            <TabsTrigger value="orm">ORM</TabsTrigger>
             <TabsTrigger value="tools">Outils</TabsTrigger>
             <TabsTrigger value="api">APIs</TabsTrigger>
             <TabsTrigger value="desktop">Desktop</TabsTrigger>
