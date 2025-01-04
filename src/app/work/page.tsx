@@ -39,6 +39,43 @@ const projects = [
 
   {
     num: "02",
+    title: "BonwazDeals",
+    description: "(En production) Site ecommerce multivendeur Dokan.",
+    category: "Site Web",
+    stack: [
+      { name: "Wordpress" },
+      { name: "WooCommerce" },
+      { name: "PHP" },
+      { name: "Js" },
+      { name: "CSS" },
+      { name: "Dokan" },
+      { name: "Action Wordpress" },
+    ],
+    image: "/assets/bonwazdeals.png",
+    live: "https://bonwazdeals.com/",
+  },
+  {
+    num: "03",
+    title: "Devi-a",
+    description:
+      "(En production) Sass pour analyse de devis",
+    category: "Site Web",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Chakra UI" },
+      { name: "OpenAI" },
+      { name: "DocumentAI" },
+      { name: "GoogleAI" }
+
+    ],
+    image: "/assets/devia.png",
+    live: "https://artisan-a6u5.vercel.app/",
+    github: "https://github.com/ondongo/artisan",
+  },
+
+  {
+    num: "04",
     title: "DydyHair",
     description:
       "(En production) Site web pour prise de rendez-vous de coiffure.",
@@ -59,7 +96,7 @@ const projects = [
   },
 
   {
-    num: "03",
+    num: "05",
     title: "GameShopy",
     description:
       "Création d'une application web e-commerce et blog dédié au gaming.",
@@ -74,7 +111,7 @@ const projects = [
   },
 
   {
-    num: "04",
+    num: "06",
     title: "DydyShop",
     description: "(En production) E-commerce utilisant Flask.",
     category: "E-commerce",
@@ -92,7 +129,7 @@ const projects = [
   },
 
   {
-    num: "05",
+    num: "07",
     title: "LokalMarket",
     description:
       "Collaboration à la création d'une application web e-commerce multi-vendeur.",
@@ -107,7 +144,7 @@ const projects = [
     image: "/assets/dysoft7.webp",
   },
   {
-    num: "06",
+    num: "08",
     title: "ScrapAfrica",
     description:
       "Création d'une application web B2B avec Next.js, Firebase et Algolia.",
@@ -117,7 +154,7 @@ const projects = [
     live: "https://www.scrapafrica.com/",
   },
   {
-    num: "07",
+    num: "09",
     title: "Mediane",
     description:
       "Collaboration à la création d'une application web de prise de rendez-vous.",
@@ -126,7 +163,7 @@ const projects = [
     image: "/assets/dysoft8.png",
   },
   {
-    num: "08",
+    num: "10",
     title: "Groopy",
     description:
       "Développement d’applications mobiles et Progressive Web Apps en FlutterFlow.",
@@ -142,7 +179,7 @@ const projects = [
   },
 
   {
-    num: "09",
+    num: "11",
     title: "Biscoito",
     description:
       "Collaboration à la création d'une application web de mise en relations entre marques et prestataires de service.",
@@ -157,7 +194,7 @@ const projects = [
     image: "/assets/dysoft5.png",
   },
   {
-    num: "10",
+    num: "12",
     title: "Web3 Studio",
     description:
       "(En production) Reproduction d'une maquette Figma avec Next.js.",
@@ -169,7 +206,7 @@ const projects = [
   },
 
   {
-    num: "11",
+    num: "13",
     title: "Takeadoro Backend",
     description:
       "Backend pour l'application Takeadoro utilisant Firebase Cloud Functions.",
@@ -179,7 +216,7 @@ const projects = [
     github: "https://github.com/ondongo/takeadoro-backend",
   },
   {
-    num: "12",
+    num: "14",
     title: "Takeadoro Landing",
     description: "Landing page pour l'application Takeadoro.",
     category: "Landing Page",
@@ -190,7 +227,7 @@ const projects = [
   },
 
   {
-    num: "13",
+    num: "15",
     title: "Orphelinat Newsletter",
     description: "Application de newsletter pour un orphelinat.",
     category: "Application",
@@ -207,7 +244,7 @@ const projects = [
   },
 
   {
-    num: "14",
+    num: "16",
     title: "QRCode Generator",
     description: "(En production) Générateur de QR Code simple.",
     category: "Application",
@@ -217,7 +254,7 @@ const projects = [
     github: "https://github.com/ondongo/qrcode_generator",
   },
   {
-    num: "15",
+    num: "17",
     title: "LogeRapide",
     description: "(En développement) Plateforme de bibliothèque en ligne.",
     category: "Application",
@@ -232,7 +269,7 @@ const projects = [
   },
 
   {
-    num: "16",
+    num: "18",
     title: "E-Library",
     description: "(En développement) Plateforme de bibliothèque en ligne.",
     category: "Application",
