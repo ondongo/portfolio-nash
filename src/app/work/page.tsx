@@ -57,8 +57,7 @@ const projects = [
   {
     num: "03",
     title: "Devi-a",
-    description:
-      "(En production) Sass pour analyse de devis",
+    description: "(En production) Sass pour analyse de devis",
     category: "Site Web",
     stack: [
       { name: "Next.js" },
@@ -66,8 +65,7 @@ const projects = [
       { name: "Chakra UI" },
       { name: "OpenAI" },
       { name: "DocumentAI" },
-      { name: "GoogleAI" }
-
+      { name: "GoogleAI" },
     ],
     image: "/assets/devia.png",
     live: "https://artisan-a6u5.vercel.app/",
@@ -97,21 +95,36 @@ const projects = [
 
   {
     num: "05",
-    title: "GameShopy",
+    title: "StandShop",
     description:
-      "Création d'une application web e-commerce et blog dédié au gaming.",
+      "Création d'une application web e-commerce et blog dédié aux montres de luxes.",
     category: "Ecommerce - Blog",
     stack: [
       { name: "Wordpress" },
       { name: "Woocormerce" },
       { name: "Stripe" },
       { name: "Seo" },
+      { name: "CSS" },
+      { name: "Js" },
     ],
-    image: "/assets/gameshopy.png",
+    image: "/assets/standshop.png",
   },
-
   {
     num: "06",
+    title: "Kozua",
+    description:
+      "Application web dédié à la location de vehicule et d'appartement ",
+    category: "Application Web",
+    stack: [
+      { name: "Next.js" },
+      { name: "Firebase" },
+      { name: "clean architecture" },
+      { name: "Etc ..." },
+    ],
+    image: "/assets/kozua.png",
+  },
+  {
+    num: "07",
     title: "DydyShop",
     description: "(En production) E-commerce utilisant Flask.",
     category: "E-commerce",
@@ -129,7 +142,7 @@ const projects = [
   },
 
   {
-    num: "07",
+    num: "08",
     title: "LokalMarket",
     description:
       "Collaboration à la création d'une application web e-commerce multi-vendeur.",
@@ -144,7 +157,7 @@ const projects = [
     image: "/assets/dysoft7.webp",
   },
   {
-    num: "08",
+    num: "09",
     title: "ScrapAfrica",
     description:
       "Création d'une application web B2B avec Next.js, Firebase et Algolia.",
@@ -154,7 +167,7 @@ const projects = [
     live: "https://www.scrapafrica.com/",
   },
   {
-    num: "09",
+    num: "10",
     title: "Mediane",
     description:
       "Collaboration à la création d'une application web de prise de rendez-vous.",
@@ -163,7 +176,7 @@ const projects = [
     image: "/assets/dysoft8.png",
   },
   {
-    num: "10",
+    num: "11",
     title: "Groopy",
     description:
       "Développement d’applications mobiles et Progressive Web Apps en FlutterFlow.",
@@ -179,7 +192,7 @@ const projects = [
   },
 
   {
-    num: "11",
+    num: "12",
     title: "Biscoito",
     description:
       "Collaboration à la création d'une application web de mise en relations entre marques et prestataires de service.",
@@ -194,7 +207,7 @@ const projects = [
     image: "/assets/dysoft5.png",
   },
   {
-    num: "12",
+    num: "13",
     title: "Web3 Studio",
     description:
       "(En production) Reproduction d'une maquette Figma avec Next.js.",
@@ -206,7 +219,7 @@ const projects = [
   },
 
   {
-    num: "13",
+    num: "14",
     title: "Takeadoro Backend",
     description:
       "Backend pour l'application Takeadoro utilisant Firebase Cloud Functions.",
@@ -216,7 +229,7 @@ const projects = [
     github: "https://github.com/ondongo/takeadoro-backend",
   },
   {
-    num: "14",
+    num: "15",
     title: "Takeadoro Landing",
     description: "Landing page pour l'application Takeadoro.",
     category: "Landing Page",
@@ -227,7 +240,7 @@ const projects = [
   },
 
   {
-    num: "15",
+    num: "16",
     title: "Orphelinat Newsletter",
     description: "Application de newsletter pour un orphelinat.",
     category: "Application",
@@ -244,7 +257,7 @@ const projects = [
   },
 
   {
-    num: "16",
+    num: "17",
     title: "QRCode Generator",
     description: "(En production) Générateur de QR Code simple.",
     category: "Application",
@@ -254,7 +267,7 @@ const projects = [
     github: "https://github.com/ondongo/qrcode_generator",
   },
   {
-    num: "17",
+    num: "18",
     title: "LogeRapide",
     description: "(En développement) Plateforme de bibliothèque en ligne.",
     category: "Application",
@@ -269,7 +282,7 @@ const projects = [
   },
 
   {
-    num: "18",
+    num: "19",
     title: "E-Library",
     description: "(En développement) Plateforme de bibliothèque en ligne.",
     category: "Application",
@@ -280,6 +293,21 @@ const projects = [
       { name: "Algolia" },
     ],
     image: "/assets/elibary.png",
+  },
+
+  {
+    num: "20",
+    title: "GameShopy",
+    description:
+      "Création d'une application web e-commerce et blog dédié au gaming.",
+    category: "Ecommerce - Blog",
+    stack: [
+      { name: "Wordpress" },
+      { name: "Woocormerce" },
+      { name: "Stripe" },
+      { name: "Seo" },
+    ],
+    image: "/assets/gameshopy.png",
   },
 ];
 
