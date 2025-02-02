@@ -594,7 +594,7 @@ function page() {
           </p>
 
           <div className="mt-10">
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-col xl:flex-row items-center space-x-4 ">
               <div className="flex items-center space-x-2">
                 <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
                 <span className="text-white">Niveau Novice</span>
