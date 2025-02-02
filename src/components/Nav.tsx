@@ -13,11 +13,6 @@ function Nav() {
       path: "/about",
     },
     {
-      name: "services",
-      path: "/services",
-    },
-
-    {
       name: "skills",
       path: "/skills",
     },
@@ -25,6 +20,11 @@ function Nav() {
       name: "projets",
       path: "/work",
     },
+    {
+      name: "services",
+      path: "/services",
+    },
+
     {
       name: "contact",
       path: "/contact",

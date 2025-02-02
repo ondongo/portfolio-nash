@@ -7,10 +7,12 @@ export function AnimatedPinDemo({
   title,
   desc,
   icon,
+  levelColor
 }: {
   title: string;
   desc: string;
   icon: React.ReactNode;
+  levelColor: string;
 }) {
   return (
     <motion.div
@@ -29,7 +31,7 @@ export function AnimatedPinDemo({
           <div className="text-base m-0 p-0 font-normal">
             <span className="text-slate-500 ">{desc}</span>
           </div>
-          <div className="flex flex-1 w-full items-center justify-center rounded-lg mt-4 bg-gradient-to-br from-green-300 via-green-500 to-green-700 p-6">
+          <div className={`flex flex-1 w-full items-center justify-center rounded-lg mt-4 bg-gradient-to-br ${levelColor} p-6`}>
             <div className="text-5xl text-white">{icon}</div>
           </div>
         </div>
