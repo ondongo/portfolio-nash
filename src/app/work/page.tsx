@@ -107,7 +107,8 @@ const projects = [
       { name: "CSS" },
       { name: "Js" },
     ],
-    image: "/assets/standshop.png",
+    image: "/assets/stand.png",
+    live: "https://standshop.store",
   },
   {
     num: "06",
