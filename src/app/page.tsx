@@ -53,7 +53,7 @@ export default function Home() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link); */
-    router.push("/CVFullInformation.pdf");
+    router.push("/CV Prince de Gloire 2025.pdf");
     /*   window.open('/CvGloireAlternantProfil.pdf', '_blank'); */
   };
 
