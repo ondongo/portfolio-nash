@@ -15,6 +15,10 @@ function PageTransition({ children }: any) {
             transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
           }}
           className="h-screen w-screen fixed bg-slate-950 top-0 pointer-events-none"
+          style={{
+            backgroundImage: "radial-gradient(#ffffff22 0px, transparent 1px)",
+            backgroundSize: "6px 6px",
+          }}
         />
         {children}
       </div>

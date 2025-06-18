@@ -16,7 +16,7 @@ body {
   }
 
   .h1 {
-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+    @apply text-[38px] xl:text-[75px] leading-[1.1] font-semibold;
   }
 
   .h2 {
@@ -62,4 +62,37 @@ body {
     -webkit-text-stroke: 1px #87eeab;
     cursor: pointer;
   }
+}
+
+@layer utilities {
+  .mask {
+    mask-size: 100% 100%;
+    mask-image: radial-gradient(
+      var(--mask-radius) at var(--mask-position-x) var(--mask-position-y),
+      black 0%,
+      transparent 100%
+    );
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-image: radial-gradient(
+      var(--mask-radius) at var(--mask-position-x) var(--mask-position-y),
+      black 0%,
+      transparent 100%
+    );
+  }
+
+  .gradient {
+    background: radial-gradient(
+      ellipse var(--gradient-width) var(--gradient-height) at var(--gradient-position-x) var(--gradient-position-y),
+      var(--gradient-color-start),
+      var(--gradient-color-end)
+    );
+    width: 400%;
+    height: 400%;
+    left: -150%;
+    top: -150%;
+    transform: rotate(var(--gradient-tilt));
+    transform-origin: center;
+  }
+
+
 }

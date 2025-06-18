@@ -69,8 +69,10 @@ export default function Home() {
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">
-              Développeur Full Stack passionné, spécialisé dans la création de
-              solutions web et mobiles modernes.{" "}
+              Curieux et exigeant, je conçois des applications performantes et
+              bien pensées. J’aime transformer les idées en expériences
+              digitales utiles et élégantes. Prêt à relever vos défis en
+              alternance — recrutez-moi.
             </p>
 
             {/* Links */}

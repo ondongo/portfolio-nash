@@ -5,12 +5,46 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairEffect from "@/components/animation/stairs/StairEffect";
 import { Analytics } from "@vercel/analytics/react";
+import TailwindBackgroundEffects from "@/components/TailwindBackgroundEffects";
+import CursorLightMask from "@/components/TailwindBackgroundEffects";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-jetbrainsmono",
 });
+
+const effects = {
+  mask: { cursor: true, x: 300, y: 300, radius: 200 },
+  gradient: {
+    display: true,
+    x: 300,
+    y: 300,
+    width: 400,
+    height: 400,
+    tilt: 45,
+    colorStart: "#00f",
+    colorEnd: "#0ff",
+    opacity: 40,
+  },
+  dots: {
+    display: true,
+    color: "#ffffff22",
+    size: 2,
+    opacity: 0.2,
+  },
+  grid: {
+    display: true,
+    color: "#ffffff10",
+    width: 40,
+    height: 40,
+    opacity: 0.1,
+  },
+  lines: {
+    display: true,
+    opacity: 0.05,
+  },
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://princedegloire.fr"),
@@ -48,6 +82,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${jetBrainsMono.variable}  `}>
+        <CursorLightMask
+        
+        />
+
         <Header />
         <StairEffect />
         <PageTransition>{children}</PageTransition>
