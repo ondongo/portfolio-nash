@@ -24,7 +24,7 @@ const socials = [
   {
     icon: <FaGlobe />,
     path: isMobile()
-      ? "https://ondongo.github.io/GlassMorpism_MonCv"
+      ? "#"
       : "/old-website",
   },
 ];
