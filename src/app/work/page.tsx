@@ -16,7 +16,7 @@ import "swiper/swiper-bundle.css";
 
 const projects = [
   {
-    num: "01",
+    num: "00",
     title: "portfolio-nash",
     description: "Portfolio personnel utilisant Nextjs.",
     category: "Portfolio",
@@ -38,7 +38,45 @@ const projects = [
   },
 
   {
+    num: "01",
+    title: "dvia V2",
+
+    description: "(En production) Sass pour analyse de devis & recherche d'artisans vérifiés",
+    category: "Site Web",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Chakra UI" },
+      { name: "OpenAI" },
+      { name: "DocumentAI" },
+      { name: "GoogleAI" },
+    ],
+    image: "/assets/dvia.png",
+    live: "https://d-via.vercel.app/",
+    github: "https://github.com/ondongo/d-via",
+  },
+
+  {
     num: "02",
+    title: "Kozua",
+    description:
+      "Application web dédié à la location de vehicule et d'appartement ",
+    category: "Application Web",
+    stack: [
+      { name: "Next.js" },
+      { name: "Firebase Storage" },
+      { name: "clean architecture" },
+      { name: "Next Auth" },
+      { name: "Prisma" },
+      { name: "Posgresql" },
+    ],
+    image: "/assets/koz.png",
+    live: "https://www.kozua.fr/",
+    github: "https://github.com/ondongo/ko.zua",
+  },
+
+  {
+    num: "03",
     title: "BonwazDeals",
     description: "(En production) Site ecommerce multivendeur Dokan.",
     category: "Site Web",
@@ -55,7 +93,7 @@ const projects = [
     live: "https://bonwazdeals.com/",
   },
   {
-    num: "03",
+    num: "04",
     title: "Devi-a",
     description: "(En production) Sass pour analyse de devis",
     category: "Site Web",
@@ -73,7 +111,17 @@ const projects = [
   },
 
   {
-    num: "04",
+    num: "05",
+    title: "Takeadoro Landing",
+    description: "Landing page pour l'application Takeadoro.",
+    category: "Landing Page",
+    stack: [{ name: "TypeScript" } , { name: "React" }],
+    image: "/assets/tak.png",
+    live: "https://www.takeadoro.com/",
+    github: "https://github.com/ondongo/takeadoro-landing",
+  },
+  {
+    num: "06",
     title: "DydyHair",
     description:
       "(En production) Site web pour prise de rendez-vous de coiffure.",
@@ -94,7 +142,7 @@ const projects = [
   },
 
   {
-    num: "05",
+    num: "07",
     title: "StandShop",
     description:
       "Création d'une application web e-commerce et blog dédié aux montres de luxes.",
@@ -110,22 +158,9 @@ const projects = [
     image: "/assets/stand.png",
     live: "https://standshop.store",
   },
+ 
   {
-    num: "06",
-    title: "Kozua",
-    description:
-      "Application web dédié à la location de vehicule et d'appartement ",
-    category: "Application Web",
-    stack: [
-      { name: "Next.js" },
-      { name: "Firebase" },
-      { name: "clean architecture" },
-      { name: "Etc ..." },
-    ],
-    image: "/assets/kozua.png",
-  },
-  {
-    num: "07",
+    num: "08",
     title: "DydyShop",
     description: "(En production) E-commerce utilisant Flask.",
     category: "E-commerce",
@@ -143,7 +178,7 @@ const projects = [
   },
 
   {
-    num: "08",
+    num: "09",
     title: "LokalMarket",
     description:
       "Collaboration à la création d'une application web e-commerce multi-vendeur.",
@@ -158,7 +193,7 @@ const projects = [
     image: "/assets/dysoft7.webp",
   },
   {
-    num: "09",
+    num: "10",
     title: "ScrapAfrica",
     description:
       "Création d'une application web B2B avec Next.js, Firebase et Algolia.",
@@ -168,7 +203,7 @@ const projects = [
     live: "https://www.scrapafrica.com/",
   },
   {
-    num: "10",
+    num: "11",
     title: "Mediane",
     description:
       "Collaboration à la création d'une application web de prise de rendez-vous.",
@@ -177,7 +212,7 @@ const projects = [
     image: "/assets/dysoft8.png",
   },
   {
-    num: "11",
+    num: "12",
     title: "Groopy",
     description:
       "Développement d’applications mobiles et Progressive Web Apps en FlutterFlow.",
@@ -193,7 +228,7 @@ const projects = [
   },
 
   {
-    num: "12",
+    num: "13",
     title: "Biscoito",
     description:
       "Collaboration à la création d'une application web de mise en relations entre marques et prestataires de service.",
@@ -208,7 +243,7 @@ const projects = [
     image: "/assets/dysoft5.png",
   },
   {
-    num: "13",
+    num: "14",
     title: "Web3 Studio",
     description:
       "(En production) Reproduction d'une maquette Figma avec Next.js.",
@@ -229,16 +264,7 @@ const projects = [
     image: "/assets/takeadoro.png",
     github: "https://github.com/ondongo/takeadoro-backend",
   },
-  {
-    num: "15",
-    title: "Takeadoro Landing",
-    description: "Landing page pour l'application Takeadoro.",
-    category: "Landing Page",
-    stack: [{ name: "TypeScript" }],
-    image: "/assets/takeadoro.png",
-    live: "https://takeadoro-landing.vercel.app/",
-    github: "https://github.com/ondongo/takeadoro-landing",
-  },
+
 
   {
     num: "16",

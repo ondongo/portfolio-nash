@@ -5,19 +5,19 @@ import Link from "next/link";
 function Nav() {
   const links = [
     {
-      name: "Acceuil",
+      name: "Home",
       path: "/",
     },
     {
-      name: "parcours",
+      name: "About",
       path: "/about",
     },
     {
-      name: "skills",
+      name: "Skills",
       path: "/skills",
     },
     {
-      name: "projets",
+      name: "projects",
       path: "/work",
     },
 

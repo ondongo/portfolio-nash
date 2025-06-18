@@ -16,11 +16,6 @@ const infos = [
   {
     icon: <FaPhoneAlt />,
     title: "Téléphone",
-    description: "(+33) 7 51 13 31 44 ",
-  },
-  {
-    icon: <FaPhoneAlt />,
-    title: "Téléphone 2",
     description: "(+33) 7 44 84 40 63 ",
   },
   {
@@ -32,7 +27,7 @@ const infos = [
   {
     icon: <FaMapMarkedAlt />,
     title: "Adresse",
-    description: "28 rue de lorraine , Rennes 35000",
+    description: " Rennes 35000",
   },
 ];
 function Contact() {
