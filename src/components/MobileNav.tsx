@@ -43,8 +43,8 @@ function MobileNav() {
         {/* logo */}{" "}
         <div className="mt-24 mb-12 md:mb-20 text-center text-2xl">
           <Link href={""}>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
-              Developer<span className="text-green-300"> &lt; 👨🏾‍💻 &gt; </span>
+            <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold">
+              Prince of Code <span className="text-green-300"> &lt; 👨🏾‍💻 &gt; </span>
             </h1>
           </Link>
         </div>
