@@ -67,7 +67,7 @@ function MobileNav() {
           <Link
             href={"mailto:gloireondongo1205@gmail.com?subject=Alternance%20Full%20Stack%20chez%20[Nom%20de%20l'entreprise]&body=Bonjour%20Prince%2C%0A%0ANous%20souhaiterions%20échanger%20avec%20toi%20concernant%20une%20opportunité%20d'alternance%20au%20sein%20de%20notre%20équipe%20tech.%0A%0ASerais-tu%20disponible%20pour%20un%20échange%20dans%20les%20jours%20à%20venir%20%3F%0A%0ABien%20à%20toi%2C%0A[Signature]"}
           >
-            <Button className="remplissage">recrutez moi</Button>
+            <Button className="remplissage cursor-pointer">recrutez moi</Button>
           </Link>
         </nav>
       </SheetContent>
