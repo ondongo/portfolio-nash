@@ -7,6 +7,7 @@ import StairEffect from "@/components/animation/stairs/StairEffect";
 import { Analytics } from "@vercel/analytics/react";
 import TailwindBackgroundEffects from "@/components/TailwindBackgroundEffects";
 import CursorLightMask from "@/components/TailwindBackgroundEffects";
+import MusicToggle from "@/components/MusicToggle";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -89,6 +90,7 @@ export default function RootLayout({
         <Header />
         <StairEffect />
         <PageTransition>{children}</PageTransition>
+        <MusicToggle />
         <Analytics />
         <script
           defer
