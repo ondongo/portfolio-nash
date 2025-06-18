@@ -5,35 +5,37 @@ import React from "react";
 
 function Photo() {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative flex items-center justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
           transition: { delay: 1.8, duration: 0.4, ease: "easeIn" },
         }}
+        className="relative"
       >
+        {/* Conteneur circulaire pour l’image */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
             transition: { delay: 2.1, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten
-          absolute"
+          className="relative w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] rounded-full overflow-hidden"
         >
           <Image
-            src="/emoji2.png"
+            src="/assets/2048.jpeg"
+            alt="https://devimages-cdn.apple.com/wwdc-services/articles/images/1E40DB17-EE2A-48AD-B37B-E5DA24B74F9A/2048.jpeg"
+            fill
             priority
             quality={100}
-            fill
-            alt=""
-            className="object-contain"
+            className="object-cover"
           />
         </motion.div>
 
+        {/* Cercle SVG animé */}
         <motion.svg
-          className="w-[300px] xl:w-[506px]  h-[300px] xl:h-[506px]"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] pointer-events-none"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"

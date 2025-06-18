@@ -9,6 +9,11 @@ const nextConfig = {
         hostname: "assets.aceternity.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "devimages-cdn.apple.com",
+        pathname: "/**",
+      },
     ],
   },
 };
