@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+README – Portfolio Next.js
 
-## Getting Started
+1) Pré‑requis
 
-First, run the development server:
+Node.js (version LTS recommandée)
 
-```bash
+Git installé sur la machine
+
+Compte GitHub et compte Vercel
+
+2) Installation locale
+
+Cloner le dépôt
+
+git clone <URL_DU_REPO>
+cd <NOM_DU_DOSSIER>
+
+Installer les dépendances
+
+npm install
+# ou
+yarn
+# ou
+pnpm install
+
+Lancer le serveur de développement
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# ou: pnpm dev / yarn dev / bun dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez votre navigateur sur : http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3) Gestion des images et de la musique
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Placez vos images dans public/ (exemple : public/images/…).
 
-## Learn More
+Placez la musique de fond dans public/ (exemple : public/audio/musique.mp3).
 
-To learn more about Next.js, take a look at the following resources:
+Utilisez des chemins absolus dans le code :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img src="/images/hero.jpg" alt="Hero" />
+<audio src="/audio/musique.mp3" autoPlay loop />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Astuce : les navigateurs peuvent bloquer l’autoplay sans interaction, prévoyez un bouton Play.
 
-## Deploy on Vercel
+4) Scripts utiles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npm run dev → démarre le serveur en développement
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm run build → génère la version production
+
+npm start → lance le serveur en production (après build)
+
+npm run lint → vérifie la qualité du code
+
+5) Déploiement sur Vercel
+
+Option A — via GitHub (recommandé) :
+
+Envoyez votre code sur GitHub.
+
+Sur Vercel, créez un New Project et importez le dépôt.
+
+Vercel détectera automatiquement Next.js.
+
+Cliquez sur Deploy.
+
+Option B — via Vercel CLI :
+
+npm i -g vercel
+vercel login
+vercel
+
+Chaque push sur la branche principale déclenche un déploiement automatique.
+
+6) Structure du projet
+
+root
+├─ app/                # Pages et routes
+├─ public/             # Images, audio, favicon, etc.
+│  ├─ images/
+│  └─ audio/
+├─ styles/
+├─ components/
+├─ package.json
+└─ README.md
+
+7) Dépannage
+
+Version Node incompatible → utiliser la version LTS
+
+Assets non trouvés → vérifier les chemins /images/... ou /audio/...
+
+Autoplay bloqué → prévoir une interaction utilisateur
