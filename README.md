@@ -99,7 +99,17 @@ root
 
 ---
 
-## 7) Dépannage
+## 7) Guide pour compléter des pages et composants
+
+* **Ajouter une page** : créer un fichier dans `app/` avec le nom de la route, par exemple `app/contact/page.tsx`.
+* **Modifier une page existante** : ouvrir le fichier correspondant dans `app/` et mettre à jour le contenu JSX.
+* **Ajouter un composant** : créer un fichier dans `components/` (ex : `components/Bouton.tsx`) et l’importer dans la page où il sera utilisé.
+* **Importer des images ou audio** : placer les fichiers dans `public/` et les référencer avec `/images/...` ou `/audio/...`.
+* **Styles** : ajouter ou modifier les fichiers dans `styles/` ou utiliser des classes Tailwind/Chakra selon la configuration du projet.
+
+---
+
+## 8) Dépannage
 
 * **Version Node incompatible** → utiliser la version LTS
 * **Assets non trouvés** → vérifier les chemins `/images/...` ou `/audio/...`
