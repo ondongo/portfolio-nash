@@ -1,80 +1,91 @@
-README – Portfolio Next.js
+# README – Portfolio Next.js
 
-1) Pré‑requis
+## 1) Pré‑requis
 
-Node.js (version LTS recommandée)
+* **Node.js** (version LTS recommandée)
+* **Git** installé sur la machine
+* **Compte GitHub** et **compte Vercel**
 
-Git installé sur la machine
+---
 
-Compte GitHub et compte Vercel
+## 2) Installation locale
 
-2) Installation locale
+1. **Cloner le dépôt**
 
-Cloner le dépôt
+   ```bash
+   git clone <URL_DU_REPO>
+   cd <NOM_DU_DOSSIER>
+   ```
 
-git clone <URL_DU_REPO>
-cd <NOM_DU_DOSSIER>
+2. **Installer les dépendances**
 
-Installer les dépendances
+   ```bash
+   npm install
+   # ou
+   yarn
+   # ou
+   pnpm install
+   ```
 
-npm install
-# ou
-yarn
-# ou
-pnpm install
+3. **Lancer le serveur de développement**
 
-Lancer le serveur de développement
+   ```bash
+   npm run dev
+   # ou: pnpm dev / yarn dev / bun dev
+   ```
 
-npm run dev
-# ou: pnpm dev / yarn dev / bun dev
+   Ouvrez votre navigateur sur : [http://localhost:3000](http://localhost:3000)
 
-Ouvrez votre navigateur sur : http://localhost:3000
+---
 
-3) Gestion des images et de la musique
+## 3) Gestion des images et de la musique
 
-Placez vos images dans public/ (exemple : public/images/…).
+* Placez vos **images** dans `public/` (exemple : `public/images/…`).
+* Placez la **musique de fond** dans `public/` (exemple : `public/audio/musique.mp3`).
+* Utilisez des chemins absolus dans le code :
 
-Placez la musique de fond dans public/ (exemple : public/audio/musique.mp3).
+  ```tsx
+  <img src="/images/hero.jpg" alt="Hero" />
+  <audio src="/audio/musique.mp3" autoPlay loop />
+  ```
 
-Utilisez des chemins absolus dans le code :
+> Astuce : les navigateurs peuvent bloquer l’**autoplay** sans interaction, prévoyez un bouton *Play*.
 
-<img src="/images/hero.jpg" alt="Hero" />
-<audio src="/audio/musique.mp3" autoPlay loop />
+---
 
-Astuce : les navigateurs peuvent bloquer l’autoplay sans interaction, prévoyez un bouton Play.
+## 4) Scripts utiles
 
-4) Scripts utiles
+* `npm run dev` → démarre le serveur en développement
+* `npm run build` → génère la version production
+* `npm start` → lance le serveur en production (après build)
+* `npm run lint` → vérifie la qualité du code
 
-npm run dev → démarre le serveur en développement
+---
 
-npm run build → génère la version production
+## 5) Déploiement sur Vercel
 
-npm start → lance le serveur en production (après build)
+**Option A — via GitHub** (recommandé) :
 
-npm run lint → vérifie la qualité du code
+1. Envoyez votre code sur GitHub.
+2. Sur Vercel, créez un *New Project* et importez le dépôt.
+3. Vercel détectera automatiquement Next.js.
+4. Cliquez sur **Deploy**.
 
-5) Déploiement sur Vercel
+**Option B — via Vercel CLI** :
 
-Option A — via GitHub (recommandé) :
-
-Envoyez votre code sur GitHub.
-
-Sur Vercel, créez un New Project et importez le dépôt.
-
-Vercel détectera automatiquement Next.js.
-
-Cliquez sur Deploy.
-
-Option B — via Vercel CLI :
-
+```bash
 npm i -g vercel
 vercel login
 vercel
+```
 
 Chaque push sur la branche principale déclenche un déploiement automatique.
 
-6) Structure du projet
+---
 
+## 6) Structure du projet
+
+```
 root
 ├─ app/                # Pages et routes
 ├─ public/             # Images, audio, favicon, etc.
@@ -84,11 +95,12 @@ root
 ├─ components/
 ├─ package.json
 └─ README.md
+```
 
-7) Dépannage
+---
 
-Version Node incompatible → utiliser la version LTS
+## 7) Dépannage
 
-Assets non trouvés → vérifier les chemins /images/... ou /audio/...
-
-Autoplay bloqué → prévoir une interaction utilisateur
+* **Version Node incompatible** → utiliser la version LTS
+* **Assets non trouvés** → vérifier les chemins `/images/...` ou `/audio/...`
+* **Autoplay bloqué** → prévoir une interaction utilisateur
