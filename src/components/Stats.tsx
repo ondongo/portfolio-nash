@@ -2,55 +2,37 @@
 
 import React from "react";
 import CountUp from "react-countup";
+import { useTranslations } from "next-intl";
 
-const stats = [
-  {
-    num: 3,
-    text: "Ans d'experiences",
-  },
+export default function Stats() {
+  const t = useTranslations("stats");
 
-  {
-    num: 4,
-    text: "Ans d'études",
-  },
-  {
-    num: 50,
-    text: "Projets completés",
-  },
-  {
-    num: 54,
-    text: "Technologies ",
-  },
-];
-function Stats() {
+  const stats = [
+    { num: 3,  key: "experience" },
+    { num: 5,  key: "studies" },
+    { num: 50, key: "projects" },
+    { num: 60, key: "technologies" },
+  ] as const;
+
   return (
     <section className="pt-4 pb-12 xl:pb-0">
       <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none ">
-          {stats.map((item: any, index: any) => {
-            const shouldDisplayPlus = item.num > 10;
+        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
+          {stats.map((item) => {
+            const showPlus = item.num > 10;
             return (
               <div
                 className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
-                key={index}
+                key={item.key}
               >
                 <p className="text-4xl xl:text-6xl font-extrabold flex items-center">
-                  {shouldDisplayPlus && (
-                    <span className="transition-opacity duration-500"> +&nbsp;</span>
+                  {showPlus && (
+                    <span className="transition-opacity duration-500">+&nbsp;</span>
                   )}
-                  <CountUp
-                    end={item.num}
-                    duration={5}
-                    delay={2}
-                    className="inline"
-                  />
+                  <CountUp end={item.num} duration={5} delay={2} className="inline" />
                 </p>
-                <p
-                  className={`${
-                    item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                  }`}
-                >
-                  {item.text}
+                <p className={item.key.length < 10 ? "max-w-[100px]" : "max-w-[150px]"}>
+                  {t(item.key)}
                 </p>
               </div>
             );
@@ -60,5 +42,3 @@ function Stats() {
     </section>
   );
 }
-
-export default Stats;

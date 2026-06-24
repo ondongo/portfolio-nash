@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import React, { useState } from "react";
 import {
@@ -31,6 +32,7 @@ const infos = [
   },
 ];
 function Contact() {
+  const t = useTranslations("contact");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -107,49 +109,50 @@ function Contact() {
               onSubmit={handleSubmit}
             >
               <h3 className="text-3xl text-green-300">
-                Travaillons ensemble <span className="text-4xl">🤝</span>
+                {t("title")} <span className="text-4xl">🤝</span>
               </h3>
+              <p className="text-green-300/80 text-sm font-medium">
+                {t("availability")}
+              </p>
               <p className="text-white/60 xl:max-w-[60%]">
-                Intéressé par mon profil ou souhaitez en savoir plus sur mon
-                parcours ? N&apos;hésitez pas à me contacter, je serais ravi
-                d&apos;échanger avec vous.
+                {t("description")}
               </p>
               <Input
                 type="text"
-                placeholder="Comment vous appelez-vous ?"
+                placeholder={t("name")}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                required // Rendre ce champ obligatoire
+                required
               />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
                   type="email"
-                  placeholder="Un email pour vous écrire 📧 "
+                  placeholder={t("email")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  required // Rendre ce champ obligatoire
+                  required
                 />
                 <Input
                   type="tel"
-                  placeholder="Un numéro pour papoter 📞" // Ce champ est optionnel
+                  placeholder={t("phone")}
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               <Textarea
-                placeholder="Partagez vos idées avec moi ✨"
+                placeholder={t("message")}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                required // Rendre ce champ obligatoire
+                required
               />
               <Button
                 type="submit"
                 disabled={loading}
-                className={` max-w-60 ml-auto ${
+                className={`max-w-60 ml-auto ${
                   loading ? "bg-gray-500" : "bg-green-500 hover:bg-green-600"
                 }`}
               >
-                {loading ? "Envoi en cours..." : "Faites le premier pas !"}
+                {loading ? t("sending") : t("submit")}
               </Button>
               {error && <p className="text-red-500">{error}</p>}
             </form>

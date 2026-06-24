@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "header": {
+    "hire": "Hire me"
+  },
+  "hero": {
+    "role": "Full Stack Developer",
+    "description": "Building modern web applications and scalable backend systems with React, Next.js and Java Spring Boot.",
+    "availability": "Available for a full-time position from September 2026.",
+    "cv": "My CV"
+  },
+  "stats": {
+    "experience": "years of experience",
+    "studies": "years of studies",
+    "projects": "completed projects",
+    "technologies": "technologies"
+  },
+  "contact": {
+    "title": "Let's work together",
+    "availability": "Available for a full-time position from September 2026.",
+    "description": "Open to Full Stack, Frontend, Java Spring Boot and e-commerce opportunities. Interested in my profile? Feel free to reach out.",
+    "name": "What's your name?",
+    "email": "Your email address",
+    "phone": "Your phone number (optional)",
+    "message": "Share your ideas with me",
+    "submit": "Make the first move!",
+    "sending": "Sending..."
+  },
+  "blog": {
+    "title": "Blog &",
+    "subtitle": "Technical Notes",
+    "description": "Technical watch, experience reports and articles on AI, web and e-commerce.",
+    "read": "Read article",
+    "showMore": "Show more articles",
+    "showLess": "Show less"
+  },
+  "about": {
+    "title": "About",
+    "bio": "Passionate Full Stack Developer, I build modern web applications with React, Next.js and Java Spring Boot. My international journey has taken me from Dakar to Rennes, with remote experience for a Brazilian company and several freelance engagements. Currently on a mission at Niji, finishing my Full Stack MBA at MyDigitalSchool and available for a full-time position from September 2026.",
+    "countries": "Congo · France · Senegal · Brazil",
+    "languages": "French, English, Lingala",
+    "experienceTitle": "Experience & Journey",
+    "experienceSubtitle": "Each project has strengthened my technical expertise and my ability to deliver high-value solutions.",
+    "niji_title": "Full Stack Developer — Niji",
+    "niji_desc": "At Niji, I work on high-impact projects in entertainment and B2B e-commerce, focusing on frontend integration, user interfaces, APIs and delivery quality.",
+    "clarins_title": "Full Stack Developer - Freelance mission for Clarins",
+    "clarins_desc": "I had the opportunity to work as a freelancer for Clarins, where I contributed to optimising their digital platform by writing Framer code overrides.",
+    "mds_title": "Full Stack Developer (Bac+4) - MydigitalSchool Rennes",
+    "mds_desc": "In training, I am honing my skills in full stack development, building performant and innovative applications. I work on real-world projects, delivering robust solutions tailored to client needs.",
+    "dysoft_title": "Full Stack Developer - Dysoft Consulting",
+    "dysoft_desc": "As a Full Stack Developer at Dysoft Consulting for over a year, I had the opportunity to build innovative and engaging digital experiences. My role involved contributing to multi-vendor e-commerce applications and Progressive Web Apps, integrating payment solutions while ensuring optimised user journeys.",
+    "monark_title": "Web Assistant (6-month internship) - Monark Group",
+    "monark_desc": "During my six-month internship at Monark Group, I played a key role assisting in the development of WordPress sites, including showcase sites, e-commerce and intranets. I contributed to building dynamic landing pages with interactive animations to enhance the user experience.",
+    "ism_title": "Bachelor's in Software Engineering & Networks - ISM Digital Campus",
+    "ism_desc": "This programme gave me a solid foundation in web and mobile development, project management and networking, paving the way for a versatile technical expertise oriented towards innovative solutions."
+  },
+  "skills": {
+    "expertiseTitle": "Expertise Areas",
+    "expertiseDesc": "Key domains I work in and bring value to.",
+    "levelLegend": "Colors indicate the proficiency level."
+  }
+}

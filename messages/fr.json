@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "header": {
+    "hire": "Recrutez-moi"
+  },
+  "hero": {
+    "role": "Développeur Full Stack",
+    "description": "Je conçois des applications web modernes et des systèmes backend scalables avec React, Next.js et Java Spring Boot.",
+    "availability": "Disponible pour un CDI à partir de septembre 2026.",
+    "cv": "Mon CV"
+  },
+  "stats": {
+    "experience": "ans d'expérience",
+    "studies": "ans d'études",
+    "projects": "projets réalisés",
+    "technologies": "technologies"
+  },
+  "contact": {
+    "title": "Travaillons ensemble",
+    "availability": "Disponible pour un CDI à partir de septembre 2026.",
+    "description": "Ouvert aux opportunités Full Stack, Frontend, Java Spring Boot et e-commerce. Intéressé par mon profil ? N'hésitez pas à me contacter.",
+    "name": "Comment vous appelez-vous ?",
+    "email": "Un email pour vous écrire",
+    "phone": "Un numéro pour papoter (optionnel)",
+    "message": "Partagez vos idées avec moi",
+    "submit": "Faites le premier pas !",
+    "sending": "Envoi en cours..."
+  },
+  "blog": {
+    "title": "Blog &",
+    "subtitle": "Notes techniques",
+    "description": "Veille, retours d'expérience et articles sur l'IA, le web et l'e-commerce.",
+    "read": "Lire l'article",
+    "showMore": "Voir plus d'articles",
+    "showLess": "Voir moins"
+  },
+  "about": {
+    "title": "À propos",
+    "bio": "Développeur Full Stack passionné, je conçois des applications web modernes avec React, Next.js et Java Spring Boot. Mon parcours international m'a conduit de Dakar à Rennes, avec une expérience en remote pour une entreprise brésilienne et plusieurs missions en freelance. Actuellement en poste chez Niji, je finalise mon MBA Full Stack à MyDigitalSchool et suis disponible pour un CDI à partir de septembre 2026.",
+    "countries": "Congo · France · Sénégal · Brésil",
+    "languages": "Français, Anglais, Lingala",
+    "experienceTitle": "Expériences & Parcours",
+    "experienceSubtitle": "Chaque mission a renforcé mon expertise technique et ma capacité à livrer des projets à forte valeur ajoutée.",
+    "niji_title": "Développeur Full Stack — Niji",
+    "niji_desc": "Chez Niji, j'interviens sur des projets à fort impact dans le divertissement et l'e-commerce B2B, avec un focus sur l'intégration frontend, les interfaces utilisateur, les API et la qualité de livraison.",
+    "clarins_title": "Développeur Full Stack - Mission Clarins",
+    "clarins_desc": "J'ai eu l'opportunité de travailler en freelance pour Clarins, où j'ai contribué à l'optimisation de leur plateforme digitale en écrivant des overrides de code Framer.",
+    "mds_title": "Développeur Full Stack (Bac+4) - MydigitalSchool Rennes",
+    "mds_desc": "En formation, j'affine mes compétences en développement full stack, créant des applications performantes et innovantes. Je travaille sur des projets réels, garantissant des solutions robustes et adaptées aux besoins des clients.",
+    "dysoft_title": "Développeur Full Stack - Dysoft Consulting",
+    "dysoft_desc": "En tant que Développeur Full Stack chez Dysoft Consulting pendant plus d'un an, j'ai eu l'opportunité de créer des expériences numériques innovantes et engageantes. Mon rôle m'a permis de contribuer au développement d'applications e-commerce multi-vendeurs et de Progressive Web Apps, intégrant des solutions de paiement tout en veillant à offrir des parcours utilisateur optimisés.",
+    "monark_title": "Assistant Web (Stage de 6 mois) - Monark Group",
+    "monark_desc": "Durant mon stage de six mois chez Monark Group, j'ai joué un rôle clé en assistant au développement de sites WordPress, incluant des vitrines, des e-commerces et des intranets. J'ai contribué à la création de landing pages dynamiques, intégrant des animations interactives pour améliorer l'expérience utilisateur.",
+    "ism_title": "Licence en Génie Logiciel & Réseaux - ISM Digital Campus",
+    "ism_desc": "Cette formation m'a permis de maîtriser les bases du développement web et mobile, de la gestion de projets et des réseaux, ouvrant la voie à une expertise technique polyvalente orientée vers des solutions innovantes."
+  },
+  "skills": {
+    "expertiseTitle": "Domaines d'expertise",
+    "expertiseDesc": "Les domaines dans lesquels j'interviens et j'apporte de la valeur.",
+    "levelLegend": "Les couleurs indiquent le niveau de maîtrise."
+  }
+}
