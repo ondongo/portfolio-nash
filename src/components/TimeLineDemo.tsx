@@ -1,243 +1,253 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import { useTranslations } from "next-intl";
+
+const IMG_CLS =
+  "rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]";
 
 export function TimelineDemo() {
+  const t = useTranslations("about");
+
   const data = [
+    {
+      title: "2025 — 2026",
+      content: (
+        <div>
+          <h2 className="text-xl font-bold mb-4">{t("niji_title")}</h2>
+          <p className="text-neutral-400 text-sm font-normal mb-6">
+            {t("niji_desc")}
+          </p>
+          <div className="flex flex-wrap gap-2 mb-8">
+            {[
+              "Entertainment",
+              "B2B E-commerce",
+              "Frontend",
+              "API Integration",
+              "Agile",
+              "Product",
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="text-xs font-medium px-3 py-1 rounded-full border border-green-300/40 text-green-300 bg-green-300/10"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/Niji1.png"
+              alt="Niji - B2B e-commerce project"
+              width={500}
+              height={500}
+              className={IMG_CLS}
+            />
+            <Image
+              src="/niji2.webp"
+              alt="Niji - entertainment mission"
+              width={500}
+              height={500}
+              className={IMG_CLS}
+            />
+          </div>
+        </div>
+      ),
+    },
     {
       title: "2025",
       content: (
         <div>
-          <h2 className="text-xl font-bold mb-4">
-            Développeur Full Stack - Mission pour Clarins
-          </h2>
+          <h2 className="text-xl font-bold mb-4">{t("clarins_title")}</h2>
           <p className="text-neutral-400 text-sm font-normal mb-8">
-            J&apos;ai eu l&apos;opportunité de travailler en freelance pour
-            Clarins, où j&apos;ai contribué à l&apos;optimisation de leur
-            plateforme digitale en écrivant des overrides de code Framer.
+            {t("clarins_desc")}
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/clarins2.webp"
-              alt="clarins project"
+              alt="Clarins project"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/freelanceClarins1.avif"
-              alt="clarins project"
+              alt="Clarins project"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
           </div>
         </div>
       ),
     },
-
     {
-      title: "2024 - 2026 ",
+      title: "2024 — 2026",
       content: (
         <div>
-          <h2 className="text-xl font-bold mb-4">
-            Développeur Full Stack (Bac+4) - MydigitalSchool Rennes
-          </h2>
-          <p className="text-neutral-400 text-sm  font-normal mb-8">
-            En formation, j&apos;affine mes compétences en développement full
-            stack, créant des applications performantes et innovantes. Je
-            travaille sur des projets réels, garantissant des solutions robustes
-            et adaptées aux besoins des clients.
+          <h2 className="text-xl font-bold mb-4">{t("mds_title")}</h2>
+          <p className="text-neutral-400 text-sm font-normal mb-8">
+            {t("mds_desc")}
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/assets/mydigitalschool1.png"
-              alt="startup template"
+              alt="MyDigitalSchool"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/mydigitalschool2.jpg"
-              alt="startup template"
+              alt="MyDigitalSchool"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/mydigitalschool3.jpg"
-              alt="startup template"
+              alt="MyDigitalSchool"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/mydigitalschool4.png"
-              alt="startup template"
+              alt="MyDigitalSchool"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
           </div>
         </div>
       ),
     },
     {
-      title: "2023 - 2024 ",
+      title: "2023 — 2024",
       content: (
         <div>
-          <h2 className="text-xl font-bold mb-4">
-            Développeur Full Stack - Dysoft Consulting
-          </h2>
-          <p className="text-neutral-400  text-sm  font-normal mb-8">
-            En tant que Développeur Full Stack chez Dysoft Consulting pendant
-            plus d&apos;un an, j&apos;ai eu l&apos;opportunité de créer des
-            expériences numériques innovantes et engageantes. Mon rôle m&apos;a
-            permis de contribuer au développement d&apos;applications e-commerce
-            multi-vendeurs et de Progressive Web Apps, intégrant des solutions
-            de paiement tout en veillant à offrir des parcours utilisateur
-            optimisés. également collaboré à des projets variés, tels
-            qu&apos;une application de prise de rendez-vous et une plateforme de
-            mise en relation entre marques et prestataires de services. Grâce à
-            la refonte de plusieurs sites, j&apos;ai enrichi l&apos;expérience
-            visuelle avec des animations dynamiques, tout en rédigeant une
-            documentation technique pour garantir la compréhension et la
-            maintenance des projets.
+          <h2 className="text-xl font-bold mb-4">{t("dysoft_title")}</h2>
+          <p className="text-neutral-400 text-sm font-normal mb-8">
+            {t("dysoft_desc")}
           </p>
-
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/assets/dysoft1.png"
-              alt="hero template"
+              alt="Dysoft Consulting"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/dysoft2.png"
-              alt="feature template"
+              alt="Dysoft Consulting"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/dysoft3.png"
-              alt="bento template"
+              alt="Dysoft Consulting"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/dysoft5.png"
-              alt="cards template"
+              alt="Dysoft Consulting"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
           </div>
         </div>
       ),
     },
     {
-      title: "Mi 2022",
+      title: "Mid 2022",
       content: (
         <div>
-          <h2 className="text-xl font-bold mb-4">
-            Assistant Web (Stage de 6 mois) - Monark Group
-          </h2>
-          <p className="text-neutral-400  text-sm  font-normal mb-8">
-            Durant mon stage de six mois chez Monark Group, j&apos;ai joué un
-            rôle clé en assistant au développement de sites WordPress, incluant
-            des vitrines, des e-commerces et des intranets. J&apos;ai contribué
-            à la création de landing pages dynamiques, intégrant des animations
-            interactives pour améliorer l&apos;expérience utilisateur. Mon
-            implication dans le développement des fonctionnalités d&apos;une
-            application web de transactions m&apos;a permis d&apos;acquérir une
-            expérience précieuse, tout en veillant à la clarté des projets grâce
-            à la rédaction de spécifications techniques précises.
+          <h2 className="text-xl font-bold mb-4">{t("monark_title")}</h2>
+          <p className="text-neutral-400 text-sm font-normal mb-8">
+            {t("monark_desc")}
           </p>
-
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/assets/monark1.jpg"
-              alt="hero template"
+              alt="Monark Group"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/monark2.gif"
-              alt="feature template"
+              alt="Monark Group"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/monark3.png"
-              alt="bento template"
+              alt="Monark Group"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/monark4.jpg"
-              alt="cards template"
+              alt="Monark Group"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
           </div>
         </div>
       ),
     },
-
     {
-      title: "2020 - 2023",
+      title: "2020 — 2023",
       content: (
         <div>
-          <h2 className="text-xl font-bold mb-4">
-            Licence en Génie Logiciel & Réseaux - ISM Digital Campus
-          </h2>
-          <p className="text-neutral-400  text-sm  font-normal mb-8">
-            Cette formation m&apos;a permis de maîtriser les bases du
-            développement web et mobile, de la gestion de projets et des
-            réseaux, ouvrant la voie à une expertise technique polyvalente
-            orientée vers des solutions innovantes.
+          <h2 className="text-xl font-bold mb-4">{t("ism_title")}</h2>
+          <p className="text-neutral-400 text-sm font-normal mb-8">
+            {t("ism_desc")}
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/assets/ism1.jpg"
-              alt="hero template"
+              alt="ISM Digital Campus"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/ism2.jpg"
-              alt="feature template"
+              alt="ISM Digital Campus"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/ism3.jpg"
-              alt="bento template"
+              alt="ISM Digital Campus"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
             <Image
               src="/assets/ism4.jpeg"
-              alt="cards template"
+              alt="ISM Digital Campus"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className={IMG_CLS}
             />
           </div>
         </div>
       ),
     },
   ];
+
   return (
     <div className="w-full">
       <Timeline data={data} />

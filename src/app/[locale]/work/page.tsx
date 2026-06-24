@@ -324,6 +324,23 @@ const projects = [
 
   {
     num: "20",
+    title: "E-commerce Marketplace",
+    description:
+      "In progress — Marketplace inspired by Vinted, designed for the Congolese market. Modern architecture with Next.js, Java Spring Boot, Kafka, Redis and advanced search.",
+    category: "Marketplace — In Progress",
+    stack: [
+      { name: "Next.js" },
+      { name: "Java" },
+      { name: "Spring Boot" },
+      { name: "Kafka" },
+      { name: "Redis" },
+      { name: "PostgreSQL" },
+      { name: "Algolia" },
+    ],
+    image: "/assets/apercu1.png",
+  },
+  {
+    num: "21",
     title: "GameShopy",
     description:
       "Création d'une application web e-commerce et blog dédié au gaming.",

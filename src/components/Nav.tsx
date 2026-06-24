@@ -1,50 +1,36 @@
 "use client";
 import React from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { Link, usePathname } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+
+const links = [
+  { key: "home",     path: "/" },
+  { key: "about",    path: "/about" },
+  { key: "skills",   path: "/skills" },
+  { key: "projects", path: "/work" },
+  { key: "blog",     path: "/blog" },
+  { key: "contact",  path: "/contact" },
+] as const;
+
 function Nav() {
-  const links = [
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "About",
-      path: "/about",
-    },
-    {
-      name: "Skills",
-      path: "/skills",
-    },
-    {
-      name: "projects",
-      path: "/work",
-    },
-
-
-    {
-      name: "contact",
-      path: "/contact",
-    },
-  ];
-
   const pathname = usePathname();
+  const t = useTranslations("nav");
+
   return (
     <nav className="flex gap-8">
-      {links.map((link, index) => {
-        return (
-          <Link
-            href={link.path}
-            key={index}
-            className={`${
-              link.path === pathname &&
-              "text-green-300 border-b-2 border-green-300"
-            } capitalize font-medium hover:text-green-300 transition-all`}
-          >
-            {link.name}
-          </Link>
-        );
-      })}
+      {links.map((link) => (
+        <Link
+          href={link.path}
+          key={link.path}
+          className={`${
+            pathname === link.path
+              ? "text-green-300 border-b-2 border-green-300"
+              : ""
+          } capitalize font-medium hover:text-green-300 transition-all`}
+        >
+          {t(link.key)}
+        </Link>
+      ))}
     </nav>
   );
 }
