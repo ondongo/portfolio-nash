@@ -3,16 +3,14 @@ import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
 import { FiDownload } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
-  const router = useRouter();
   const t = useTranslations("hero");
 
   const handleDownload = () => {
-    router.push("/CVPrince2026CDI.pdf");
+    window.open("/CVPrince2026CDI.pdf", "_blank");
   };
 
   return (
