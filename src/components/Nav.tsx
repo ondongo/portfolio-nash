@@ -26,7 +26,7 @@ function Nav() {
             pathname === link.path
               ? "text-green-300 border-b-2 border-green-300"
               : ""
-          } capitalize font-medium hover:text-green-300 transition-all`}
+          } font-medium hover:text-green-300 transition-all`}
         >
           {t(link.key)}
         </Link>
