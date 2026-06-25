@@ -25,7 +25,7 @@
   "contact": {
     "title": "Travaillons ensemble",
     "availability": "Disponible pour un CDI à partir de septembre 2026.",
-    "description": "Ouvert aux opportunités Full Stack, Frontend, Java Spring Boot et e-commerce. Intéressé par mon profil ? N'hésitez pas à me contacter.",
+    "description": "Ouvert aux opportunités Full Stack, Frontend et Backend. Intéressé par mon profil ? N'hésitez pas à me contacter.",
     "name": "Comment vous appelez-vous ?",
     "email": "Un email pour vous écrire",
     "phone": "Un numéro pour papoter (optionnel)",
@@ -36,7 +36,7 @@
   "blog": {
     "title": "Blog &",
     "subtitle": "Notes techniques",
-    "description": "Veille, retours d'expérience et articles sur l'IA, le web et l'e-commerce.",
+    "description": "Veille, retours d'expérience et articles sur l'IA, le web .",
     "read": "Lire l'article",
     "showMore": "Voir plus d'articles",
     "showLess": "Voir moins"

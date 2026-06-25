@@ -33,7 +33,7 @@ export default function Home() {
             </p>
 
             <p className="max-w-[500px] mb-9 text-white/40 text-xs tracking-widest uppercase">
-              React • Next.js • Java • Spring Boot • E-commerce
+              React • Next.js • Java • Spring Boot
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">

@@ -25,7 +25,7 @@
   "contact": {
     "title": "Let's work together",
     "availability": "Available for a full-time position from September 2026.",
-    "description": "Open to Full Stack, Frontend, Java Spring Boot and e-commerce opportunities. Interested in my profile? Feel free to reach out.",
+    "description": "Open to Full Stack, Frontend and Backend opportunities. Interested in my profile? Feel free to reach out.",
     "name": "What's your name?",
     "email": "Your email address",
     "phone": "Your phone number (optional)",
@@ -36,7 +36,7 @@
   "blog": {
     "title": "Blog &",
     "subtitle": "Technical Notes",
-    "description": "Technical watch, experience reports and articles on AI, web and e-commerce.",
+    "description": "Technical watch, experience reports and articles on AI, web .",
     "read": "Read article",
     "showMore": "Show more articles",
     "showLess": "Show less"
