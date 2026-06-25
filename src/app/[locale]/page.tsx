@@ -12,7 +12,7 @@ export default function Home() {
   const t = useTranslations("hero");
 
   const handleDownload = () => {
-    router.push("/CVPrinceDeGloire2026CDI.pdf");
+    router.push("/CVPrince2026CDI.pdf");
   };
 
   return (
