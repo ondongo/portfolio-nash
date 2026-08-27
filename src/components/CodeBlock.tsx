@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface CodeBlockProps {
   language: string;
@@ -8,6 +9,7 @@ interface CodeBlockProps {
 }
 
 export function CodeBlock({ language, value }: CodeBlockProps) {
+  const t = useTranslations("codeBlock");
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -39,9 +41,9 @@ export function CodeBlock({ language, value }: CodeBlockProps) {
               ? "border-green-400/50 text-green-300 bg-green-400/10"
               : "border-white/20 text-neutral-400 hover:text-white hover:border-white/40"
           }`}
-          aria-label="Copy code"
+          aria-label={t("copy")}
         >
-          {copied ? "Copied ✓" : "Copy"}
+          {copied ? t("copied") : t("copy")}
         </button>
       </div>
       {/* Code */}

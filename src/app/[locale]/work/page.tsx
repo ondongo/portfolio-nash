@@ -10,11 +10,27 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
 const projects = [
+  {
+    num: "00",
+    title: "Toteka",
+    description:
+      "(En cours) Plateforme de petites annonces C2C pour le Congo-Brazzaville. Les acheteurs découvrent et cherchent des annonces ; les vendeurs publient leurs objets. Le contact se fait hors plateforme — par téléphone ou WhatsApp. Toteka ne gère ni panier, ni livraison, ni paiement de l'objet entre acheteur et vendeur.",
+    category: "Projet phare — En cours",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+    ],
+    image: "/assets/toteka.png",
+    live: "https://www.toteka-cg.com/discover",
+  },
+
   {
     num: "00",
     title: "portfolio-nash",
@@ -323,23 +339,6 @@ const projects = [
   },
 
   {
-    num: "20",
-    title: "E-commerce Marketplace",
-    description:
-      "In progress — Marketplace inspired by Vinted, designed for the Congolese market. Modern architecture with Next.js, Java Spring Boot, Kafka, Redis and advanced search.",
-    category: "Marketplace — In Progress",
-    stack: [
-      { name: "Next.js" },
-      { name: "Java" },
-      { name: "Spring Boot" },
-      { name: "Kafka" },
-      { name: "Redis" },
-      { name: "PostgreSQL" },
-      { name: "Algolia" },
-    ],
-    image: "/assets/apercu1.png",
-  },
-  {
     num: "21",
     title: "GameShopy",
     description:
@@ -356,6 +355,7 @@ const projects = [
 ];
 
 function Work() {
+  const t = useTranslations("work");
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (swiper: any) => {
@@ -405,7 +405,7 @@ function Work() {
               <div className="border border-white/20 "></div>
               <div className="flex gap-4">
                 {project.live && (
-                  <Link href={project.live}>
+                  <Link href={project.live} target="_blank" rel="noopener noreferrer">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -413,7 +413,7 @@ function Work() {
                         </TooltipTrigger>
 
                         <TooltipContent>
-                          <p>Voir le projet</p>
+                          <p>{t("viewProject")}</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
@@ -429,7 +429,7 @@ function Work() {
                         </TooltipTrigger>
 
                         <TooltipContent>
-                          <p>GitHub</p>
+                          <p>{t("viewCode")}</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>

@@ -31,7 +31,14 @@
     "phone": "Your phone number (optional)",
     "message": "Share your ideas with me",
     "submit": "Make the first move!",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "infoPhone": "Phone",
+    "infoEmail": "Email",
+    "infoAddress": "Location",
+    "errorRequired": "Please fill in all required fields.",
+    "errorSend": "Failed to send your message.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "success": "Your message was sent, thank you!"
   },
   "blog": {
     "title": "Blog &",
@@ -39,7 +46,18 @@
     "description": "Technical watch, experience reports and articles on AI, web .",
     "read": "Read article",
     "showMore": "Show more articles",
-    "showLess": "Show less"
+    "showLess": "Show less",
+    "backToBlog": "Back to blog",
+    "seeAllArticles": "See all articles",
+    "minRead": "min read"
+  },
+  "work": {
+    "viewProject": "View project",
+    "viewCode": "View code"
+  },
+  "codeBlock": {
+    "copy": "Copy",
+    "copied": "Copied ✓"
   },
   "about": {
     "title": "About",

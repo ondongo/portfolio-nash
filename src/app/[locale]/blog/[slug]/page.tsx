@@ -3,6 +3,7 @@ import { blogArticles } from "@/data/blog";
 import { CodeBlock } from "@/components/CodeBlock";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 
 interface PageProps {
   params: { locale: string; slug: string };
@@ -34,8 +35,8 @@ function getTagColor(tag: string): string {
   return tagColors[tag] ?? "border-green-300/40 text-green-300 bg-green-300/10";
 }
 
-function formatDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString("fr-FR", {
+function formatDate(dateStr: string, locale: string): string {
+  return new Date(dateStr).toLocaleDateString(locale === "en" ? "en-GB" : "fr-FR", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -48,7 +49,8 @@ export function generateStaticParams() {
   );
 }
 
-export default function BlogArticlePage({ params }: PageProps) {
+export default async function BlogArticlePage({ params }: PageProps) {
+  const t = await getTranslations({ locale: params.locale, namespace: "blog" });
   const article = blogArticles.find((a) => a.slug === params.slug);
 
   if (!article) {
@@ -57,7 +59,7 @@ export default function BlogArticlePage({ params }: PageProps) {
 
   const readingTime =
     article.readingTime ??
-    `${Math.ceil(article.sections.length * 1.5)} min read`;
+    `${Math.ceil(article.sections.length * 1.5)} ${t("minRead")}`;
 
   return (
     <div className="min-h-[80vh] py-12 xl:py-16">
@@ -81,14 +83,14 @@ export default function BlogArticlePage({ params }: PageProps) {
                 d="M7 16l-4-4m0 0l4-4m-4 4h18"
               />
             </svg>
-            Back to blog
+            {t("backToBlog")}
           </Link>
 
           {/* En-tête */}
           <header className="mb-10">
             <div className="flex items-center gap-4 mb-3">
               <time className="text-xs text-neutral-500">
-                {formatDate(article.date)}
+                {formatDate(article.date, params.locale)}
               </time>
               <span className="text-neutral-600">·</span>
               <span className="text-xs text-neutral-500">{readingTime}</span>
@@ -152,7 +154,7 @@ export default function BlogArticlePage({ params }: PageProps) {
                   d="M7 16l-4-4m0 0l4-4m-4 4h18"
                 />
               </svg>
-              See all articles
+              {t("seeAllArticles")}
             </Link>
           </div>
         </div>

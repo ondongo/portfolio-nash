@@ -31,7 +31,14 @@
     "phone": "Un numéro pour papoter (optionnel)",
     "message": "Partagez vos idées avec moi",
     "submit": "Faites le premier pas !",
-    "sending": "Envoi en cours..."
+    "sending": "Envoi en cours...",
+    "infoPhone": "Téléphone",
+    "infoEmail": "Email",
+    "infoAddress": "Adresse",
+    "errorRequired": "Veuillez remplir tous les champs obligatoires.",
+    "errorSend": "Échec de l'envoi du message.",
+    "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
+    "success": "Votre message a bien été envoyé, merci !"
   },
   "blog": {
     "title": "Blog &",
@@ -39,7 +46,18 @@
     "description": "Veille, retours d'expérience et articles sur l'IA, le web .",
     "read": "Lire l'article",
     "showMore": "Voir plus d'articles",
-    "showLess": "Voir moins"
+    "showLess": "Voir moins",
+    "backToBlog": "Retour au blog",
+    "seeAllArticles": "Voir tous les articles",
+    "minRead": "min de lecture"
+  },
+  "work": {
+    "viewProject": "Voir le projet",
+    "viewCode": "Voir le code"
+  },
+  "codeBlock": {
+    "copy": "Copier",
+    "copied": "Copié ✓"
   },
   "about": {
     "title": "À propos",

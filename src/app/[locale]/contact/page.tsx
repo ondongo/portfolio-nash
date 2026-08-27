@@ -13,26 +13,26 @@ import {
   FaVoicemail,
 } from "react-icons/fa";
 
-const infos = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Téléphone",
-    description: "(+33) 7 44 84 40 63 ",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "gloireondongo1205@gmail.com",
-  },
-
-  {
-    icon: <FaMapMarkedAlt />,
-    title: "Adresse",
-    description: " Rennes 35000",
-  },
-];
 function Contact() {
   const t = useTranslations("contact");
+
+  const infos = [
+    {
+      icon: <FaPhoneAlt />,
+      title: t("infoPhone"),
+      description: "(+33) 7 44 84 40 63",
+    },
+    {
+      icon: <FaEnvelope />,
+      title: t("infoEmail"),
+      description: "gloireondongo1205@gmail.com",
+    },
+    {
+      icon: <FaMapMarkedAlt />,
+      title: t("infoAddress"),
+      description: "Rennes 35000",
+    },
+  ];
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -47,7 +47,7 @@ function Contact() {
 
     // Validation des champs requis
     if (!name || !email || !message) {
-      setError("Veuillez remplir tous les champs obligatoires.");
+      setError(t("errorRequired"));
       setLoading(false);
       return;
     }
@@ -77,16 +77,16 @@ function Contact() {
       );
 
       if (!response.ok) {
-        throw new Error("Échec de l'envoi de l'email");
+        throw new Error(t("errorSend"));
       }
 
-      alert("Votre email a été envoyé merci!");
+      alert(t("success"));
       setName("");
       setEmail("");
       setPhone("");
       setMessage("");
     } catch (error) {
-      setError("Oops... une erreur est survenue. Veuillez réessayer.");
+      setError(t("errorGeneric"));
     } finally {
       setLoading(false);
     }

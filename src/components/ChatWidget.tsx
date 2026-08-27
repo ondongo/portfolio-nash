@@ -26,7 +26,7 @@ const qaData: Record<Lang, QA[]> = {
     {
       question: "Quels sont tes projets ?",
       answer:
-        "Plus de 50 projets réalisés : plateformes e-commerce, applications web, solutions B2B et intégrations API. En ce moment, je construis Mboka Market, un marketplace conçu pour le marché congolais.",
+        "Plus de 50 projets réalisés : plateformes e-commerce, applications web, solutions B2B et intégrations API. En ce moment, je construis Toteka, une plateforme de petites annonces C2C pour le Congo-Brazzaville.",
     },
     {
       question: "Quelles sont tes technologies ?",
@@ -53,7 +53,7 @@ const qaData: Record<Lang, QA[]> = {
     {
       question: "What are your projects?",
       answer:
-        "50+ projects delivered: e-commerce platforms, web applications, B2B solutions and API integrations. I'm currently building Mboka Market, a marketplace designed for the Congolese market.",
+        "50+ projects delivered: e-commerce platforms, web applications, B2B solutions and API integrations. I'm currently building Toteka, a C2C classifieds platform for Congo-Brazzaville.",
     },
     {
       question: "What technologies do you use?",
