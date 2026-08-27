@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://princedegloire.fr"),
   title: "Prince de Gloire ONDONGO - Full Stack Developer",
   description:
-    "Portfolio of Prince de Gloire ONDONGO — Next.js & React Developer, Java Spring Boot, E-commerce.",
+    "Portfolio of Prince de Gloire ONDONGO - Next.js & React Developer, Java Spring Boot, E-commerce.",
   keywords: [
     "Prince de Gloire ONDONGO",
     "Full Stack Developer",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Prince de Gloire ONDONGO - Portfolio",
     description:
-      "Next.js & React Developer — e-commerce, Java Spring Boot, modern web applications.",
+      "Next.js & React Developer - e-commerce, Java Spring Boot, modern web applications.",
     images: ["https://princedegloire.fr/assets/apercu1.png"],
     type: "website",
   },

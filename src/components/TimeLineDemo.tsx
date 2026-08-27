@@ -12,7 +12,7 @@ export function TimelineDemo() {
 
   const data = [
     {
-      title: "2025 — 2026",
+      title: "2025 - 2026",
       content: (
         <div>
           <h2 className="text-xl font-bold mb-4">{t("niji_title")}</h2>
@@ -83,7 +83,7 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "2024 — 2026",
+      title: "2024 - 2026",
       content: (
         <div>
           <h2 className="text-xl font-bold mb-4">{t("mds_title")}</h2>
@@ -124,7 +124,7 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "2023 — 2024",
+      title: "2023 - 2024",
       content: (
         <div>
           <h2 className="text-xl font-bold mb-4">{t("dysoft_title")}</h2>
@@ -206,7 +206,7 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "2020 — 2023",
+      title: "2020 - 2023",
       content: (
         <div>
           <h2 className="text-xl font-bold mb-4">{t("ism_title")}</h2>

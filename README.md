@@ -1,4 +1,4 @@
-# README – Portfolio Next.js
+# README - Portfolio Next.js
 
 ## 1) Pré‑requis
 
@@ -64,14 +64,14 @@
 
 ## 5) Déploiement sur Vercel
 
-**Option A — via GitHub** (recommandé) :
+**Option A - via GitHub** (recommandé) :
 
 1. Envoyez votre code sur GitHub.
 2. Sur Vercel, créez un *New Project* et importez le dépôt.
 3. Vercel détectera automatiquement Next.js.
 4. Cliquez sur **Deploy**.
 
-**Option B — via Vercel CLI** :
+**Option B - via Vercel CLI** :
 
 ```bash
 npm i -g vercel

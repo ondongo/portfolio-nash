@@ -79,7 +79,7 @@ export function ChatWidget() {
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
-  // Fermeture au clic extérieur — exclut le bouton déclencheur
+  // Fermeture au clic extérieur - exclut le bouton déclencheur
   useEffect(() => {
     if (!open) return;
     const handler = (e: MouseEvent) => {

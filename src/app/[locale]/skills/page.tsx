@@ -120,13 +120,13 @@ const coreSkills = {
     { title: "Vercel", desc: "Deployment platform for frontend projects.", icon: <SiVercel />, levelColor: L.advanced },
     { title: "Git", desc: "Distributed version control system.", icon: <SiGit />, levelColor: L.expert },
     { title: "Postman", desc: "API testing and documentation tool.", icon: <SiPostman />, levelColor: L.advanced },
-    { title: "Azure", desc: "Microsoft cloud platform — currently learning.", icon: <SiMicrosoftazure />, levelColor: L.learning },
+    { title: "Azure", desc: "Microsoft cloud platform - currently learning.", icon: <SiMicrosoftazure />, levelColor: L.learning },
   ],
 };
 
 // ─── AI & AUTOMATION SKILLS ──────────────────────────────────────────────────
 const aiSkills = [
-  { title: "MCP", desc: "Model Context Protocol — connecting LLMs to tools and APIs.", icon: <FaNetworkWired />, levelColor: L.intermediate },
+  { title: "MCP", desc: "Model Context Protocol - connecting LLMs to tools and APIs.", icon: <FaNetworkWired />, levelColor: L.intermediate },
   { title: "RAG", desc: "Retrieval-Augmented Generation for document-based AI.", icon: <FaDatabase />, levelColor: L.intermediate },
   { title: "Vector Databases", desc: "Semantic search with Pinecone, pgvector.", icon: <FaServer />, levelColor: L.intermediate },
   { title: "AI Rules Engine", desc: "Rule-based logic for AI-assisted workflows.", icon: <FaLayerGroup />, levelColor: L.intermediate },

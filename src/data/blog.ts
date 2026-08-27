@@ -123,7 +123,7 @@ server.tool("getProjects", async () => {
       {
         heading: "Performance and conversion",
         content:
-          "Amazon and Google studies show that one extra second of latency can reduce conversions by 7%. On mobile, users abandon a page that takes more than 3 seconds to load. In e-commerce, performance is not a technical luxury — it is a direct business lever.",
+          "Amazon and Google studies show that one extra second of latency can reduce conversions by 7%. On mobile, users abandon a page that takes more than 3 seconds to load. In e-commerce, performance is not a technical luxury - it is a direct business lever.",
       },
       {
         heading: "Core Web Vitals",
@@ -287,7 +287,7 @@ public class OrderEventProducer {
     title: "Redis: caching strategies for fast applications",
     tags: ["Redis", "Performance", "Full Stack"],
     summary:
-      "Redis is more than a cache — it is a versatile in-memory data store that powers sessions, queues and real-time features.",
+      "Redis is more than a cache - it is a versatile in-memory data store that powers sessions, queues and real-time features.",
     date: "2025-06-15",
     readingTime: "5 min read",
     sections: [
@@ -329,7 +329,7 @@ public class OrderEventProducer {
     title: "Algolia: instant search for e-commerce",
     tags: ["Algolia", "E-commerce", "Front-end"],
     summary:
-      "Algolia provides sub-100ms search results with typo tolerance, faceting and ranking — a must-have for e-commerce catalogues.",
+      "Algolia provides sub-100ms search results with typo tolerance, faceting and ranking - a must-have for e-commerce catalogues.",
     date: "2025-05-01",
     readingTime: "4 min read",
     sections: [
@@ -382,7 +382,7 @@ export function ProductSearch() {
       {
         heading: "Why Spring Boot?",
         content:
-          "Spring Boot takes the heavy configuration of Spring Framework and provides opinionated defaults. You get dependency injection, JPA, security, validation and monitoring out of the box — letting you focus on business logic.",
+          "Spring Boot takes the heavy configuration of Spring Framework and provides opinionated defaults. You get dependency injection, JPA, security, validation and monitoring out of the box - letting you focus on business logic.",
       },
       {
         heading: "Project structure",
@@ -425,7 +425,7 @@ public class ProductController {
     title: "Architecture of a modern marketplace",
     tags: ["Marketplace", "Full Stack", "Java"],
     summary:
-      "Building a marketplace goes beyond a simple e-commerce store — it requires multi-tenant data, seller workflows and reliable payment splitting.",
+      "Building a marketplace goes beyond a simple e-commerce store - it requires multi-tenant data, seller workflows and reliable payment splitting.",
     date: "2025-07-10",
     readingTime: "7 min read",
     sections: [
