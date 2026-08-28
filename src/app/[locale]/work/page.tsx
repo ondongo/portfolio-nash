@@ -20,7 +20,7 @@ const projects = [
     num: "00",
     title: "Toteka",
     description:
-      "(En cours) Plateforme de petites annonces C2C pour le Congo-Brazzaville, en 4 apps : web, mobile, admin et Cloud Functions. Les acheteurs découvrent et cherchent des annonces ; les vendeurs publient leurs objets. Le contact se fait hors plateforme - par téléphone ou WhatsApp. Toteka ne gère ni panier, ni livraison, ni paiement de l'objet entre acheteur et vendeur.",
+      "(En cours) Plateforme de petites annonces C2C pour le Congo-Brazzaville.",
     category: "Projet phare - En cours",
     stack: [
       { name: "Next.js" },
@@ -47,7 +47,7 @@ const projects = [
   },
 
   {
-    num: "00",
+    num: "01",
     title: "portfolio-nash",
     description: "Portfolio personnel utilisant Nextjs.",
     category: "Portfolio",
@@ -69,7 +69,7 @@ const projects = [
   },
 
   {
-    num: "01",
+    num: "02",
     title: "dvia V2",
 
     description: "(En production) Sass pour analyse de devis & recherche d'artisans vérifiés",
@@ -88,7 +88,7 @@ const projects = [
   },
 
   {
-    num: "02",
+    num: "03",
     title: "Kozua",
     description:
       "Application web dédié à la location de vehicule et d'appartement ",
@@ -107,7 +107,7 @@ const projects = [
   },
 
   {
-    num: "03",
+    num: "04",
     title: "BonwazDeals",
     description: "(En production) Site ecommerce multivendeur Dokan.",
     category: "Site Web",
@@ -124,7 +124,7 @@ const projects = [
     live: "https://bonwazdeals.com/",
   },
   {
-    num: "04",
+    num: "05",
     title: "Devi-a",
     description: "(En production) Sass pour analyse de devis",
     category: "Site Web",
@@ -142,7 +142,7 @@ const projects = [
   },
 
   {
-    num: "05",
+    num: "06",
     title: "Takeadoro Landing",
     description: "Landing page pour l'application Takeadoro.",
     category: "Landing Page",
@@ -152,7 +152,7 @@ const projects = [
     github: "https://github.com/ondongo/takeadoro-landing",
   },
   {
-    num: "06",
+    num: "07",
     title: "DydyHair",
     description:
       "(En production) Site web pour prise de rendez-vous de coiffure.",
@@ -173,7 +173,7 @@ const projects = [
   },
 
   {
-    num: "07",
+    num: "08",
     title: "StandShop",
     description:
       "Création d'une application web e-commerce et blog dédié aux montres de luxes.",
@@ -191,7 +191,7 @@ const projects = [
   },
  
   {
-    num: "08",
+    num: "09",
     title: "DydyShop",
     description: "(En production) E-commerce utilisant Flask.",
     category: "E-commerce",
@@ -209,7 +209,7 @@ const projects = [
   },
 
   {
-    num: "09",
+    num: "10",
     title: "LokalMarket",
     description:
       "Collaboration à la création d'une application web e-commerce multi-vendeur.",
@@ -224,7 +224,7 @@ const projects = [
     image: "/assets/dysoft7.webp",
   },
   {
-    num: "10",
+    num: "11",
     title: "ScrapAfrica",
     description:
       "Création d'une application web B2B avec Next.js, Firebase et Algolia.",
@@ -234,7 +234,7 @@ const projects = [
     live: "https://www.scrapafrica.com/",
   },
   {
-    num: "11",
+    num: "12",
     title: "Mediane",
     description:
       "Collaboration à la création d'une application web de prise de rendez-vous.",
@@ -243,7 +243,7 @@ const projects = [
     image: "/assets/dysoft8.png",
   },
   {
-    num: "12",
+    num: "13",
     title: "Groopy",
     description:
       "Développement d’applications mobiles et Progressive Web Apps en FlutterFlow.",
@@ -259,7 +259,7 @@ const projects = [
   },
 
   {
-    num: "13",
+    num: "14",
     title: "Biscoito",
     description:
       "Collaboration à la création d'une application web de mise en relations entre marques et prestataires de service.",
@@ -274,7 +274,7 @@ const projects = [
     image: "/assets/dysoft5.png",
   },
   {
-    num: "14",
+    num: "15",
     title: "Web3 Studio",
     description:
       "(En production) Reproduction d'une maquette Figma avec Next.js.",
@@ -286,7 +286,7 @@ const projects = [
   },
 
   {
-    num: "14",
+    num: "16",
     title: "Takeadoro Backend",
     description:
       "Backend pour l'application Takeadoro utilisant Firebase Cloud Functions.",
@@ -298,7 +298,7 @@ const projects = [
 
 
   {
-    num: "16",
+    num: "17",
     title: "Orphelinat Newsletter",
     description: "Application de newsletter pour un orphelinat.",
     category: "Application",
@@ -315,7 +315,7 @@ const projects = [
   },
 
   {
-    num: "17",
+    num: "18",
     title: "QRCode Generator",
     description: "(En production) Générateur de QR Code simple.",
     category: "Application",
@@ -325,7 +325,7 @@ const projects = [
     github: "https://github.com/ondongo/qrcode_generator",
   },
   {
-    num: "18",
+    num: "19",
     title: "LogeRapide",
     description: "(En développement) Plateforme de bibliothèque en ligne.",
     category: "Application",
@@ -340,7 +340,7 @@ const projects = [
   },
 
   {
-    num: "19",
+    num: "20",
     title: "E-Library",
     description: "(En développement) Plateforme de bibliothèque en ligne.",
     category: "Application",
